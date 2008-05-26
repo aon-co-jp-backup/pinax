@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django-hotclub-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-26 13:42+0200\n"
-"PO-Revision-Date: 2008-05-26 13:44+0100\n"
+"POT-Creation-Date: 2008-05-27 00:22+0200\n"
+"PO-Revision-Date: 2008-05-27 00:40+0100\n"
 "Last-Translator: Jannis Leidel <jannis@leidel.info>\n"
 "Language-Team:  <robertrv@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -29,6 +29,10 @@ msgstr "Alemán"
 msgid "Spanish"
 msgstr "Español"
 
+#: settings.py:146
+msgid "Swedish"
+msgstr ""
+
 #: account/forms.py:25
 #: account/forms.py:53
 msgid "Username"
@@ -48,7 +52,7 @@ msgid "The username and/or password you specified are not correct."
 msgstr "El usuario y/o contraseña especificados no son válidos"
 
 #: account/forms.py:46
-#: account/views.py:33
+#: account/views.py:35
 #, python-format
 msgid "Successfully logged in as %(username)s."
 msgstr "Has accedido como %(username)s"
@@ -87,7 +91,7 @@ msgstr "Email de confirmación enviado a %(email)s"
 
 #: account/forms.py:119
 #: account/forms.py:158
-#: notification/models.py:39
+#: notification/models.py:40
 msgid "Email"
 msgstr "Email"
 
@@ -157,6 +161,7 @@ msgid "announcements"
 msgstr "noticias"
 
 #: dbtemplates/models.py:14
+#: profiles/models.py:9
 msgid "name"
 msgstr "nombre"
 
@@ -197,7 +202,7 @@ msgid "Timestamp"
 msgstr "Marca de tiempo"
 
 #: djangologging/templates/logging.html:16
-#: templates/profiles/profile.html:50
+#: templates/profiles/profile.html:57
 msgid "Location"
 msgstr "Localización"
 
@@ -236,7 +241,7 @@ msgstr "Filtro"
 msgid "No filter (show all)"
 msgstr "Sin filtro (muestra todo)"
 
-#: friends_app/views.py:20
+#: friends_app/views.py:23
 #, python-format
 msgid "Accepted friendship request from %(from_user)s"
 msgstr "Aceptada petición de amistad de %(from_user)s"
@@ -329,7 +334,7 @@ msgstr "Mensaje recuperado."
 
 #: messages/templates/messages/base.html:8
 #: messages/templates/messages/inbox.html:4
-#: templates/site_base.html:48
+#: templates/site_base.html:52
 #: templates/messages/base.html:12
 #: templates/messages/inbox.html:4
 msgid "Inbox"
@@ -424,81 +429,126 @@ msgstr "Responder"
 msgid "Delete"
 msgstr "Borrar"
 
-#: notification/models.py:23
+#: notification/models.py:24
 msgid "label"
 msgstr ""
 
-#: notification/models.py:24
+#: notification/models.py:25
 msgid "display"
 msgstr ""
 
-#: notification/models.py:25
+#: notification/models.py:26
 msgid "description"
 msgstr ""
 
-#: notification/models.py:34
-#: notification/models.py:49
-#: notification/models.py:72
+#: notification/models.py:35
+#: notification/models.py:50
+#: notification/models.py:73
 msgid "notice type"
 msgstr ""
 
-#: notification/models.py:35
+#: notification/models.py:36
 #, fuzzy
 msgid "notice types"
 msgstr "Avisos"
 
-#: notification/models.py:48
-#: notification/models.py:70
+#: notification/models.py:49
+#: notification/models.py:71
+#: profiles/models.py:8
 msgid "user"
 msgstr ""
 
-#: notification/models.py:50
+#: notification/models.py:51
 msgid "medium"
 msgstr ""
 
-#: notification/models.py:51
+#: notification/models.py:52
 #, fuzzy
 msgid "send"
 msgstr "remitente"
 
-#: notification/models.py:57
+#: notification/models.py:58
 #, fuzzy
 msgid "notice setting"
 msgstr "Configurar avisos"
 
-#: notification/models.py:58
+#: notification/models.py:59
 #, fuzzy
 msgid "notice settings"
 msgstr "Configurar avisos"
 
-#: notification/models.py:71
+#: notification/models.py:72
 #, fuzzy
 msgid "message"
 msgstr "Mensaje"
 
-#: notification/models.py:73
+#: notification/models.py:74
 #, fuzzy
 msgid "added"
 msgstr "añadir"
 
-#: notification/models.py:74
+#: notification/models.py:75
 msgid "unseen"
 msgstr ""
 
-#: notification/models.py:75
+#: notification/models.py:76
 #, fuzzy
 msgid "archived"
 msgstr "Recibidos"
 
-#: notification/models.py:102
+#: notification/models.py:103
 #, fuzzy
 msgid "notice"
 msgstr "Avisos"
 
-#: notification/models.py:103
+#: notification/models.py:104
 #, fuzzy
 msgid "notices"
 msgstr "Avisos"
+
+#: profiles/models.py:10
+#, fuzzy
+msgid "about"
+msgstr "Contacto"
+
+#: profiles/models.py:11
+#, fuzzy
+msgid "location"
+msgstr "Localización"
+
+#: profiles/models.py:12
+#, fuzzy
+msgid "website"
+msgstr "Página web"
+
+#: profiles/models.py:21
+#, fuzzy
+msgid "profile"
+msgstr "Perfil"
+
+#: profiles/models.py:22
+#, fuzzy
+msgid "profiles"
+msgstr "Perfiles"
+
+#: profiles/views.py:49
+#, fuzzy, python-format
+msgid "You are now following %(other_user)s"
+msgstr "Tu eres amigo/a con %(other_user)s."
+
+#: profiles/views.py:55
+#, fuzzy, python-format
+msgid "You have stopped following %(other_user)s"
+msgstr "Tu eres amigo/a con %(other_user)s."
+
+#: profiles/views.py:77
+#, fuzzy, python-format
+msgid "You have accepted the friendship request from %(from_user)s"
+msgstr "Aceptada petición de amistad de %(from_user)s"
+
+#: profiles/views.py:85
+msgid "Let's be friends!"
+msgstr ""
 
 #: robots/models.py:23
 msgid "pattern"
@@ -585,9 +635,10 @@ msgstr "Lo sentido pero ha sucedido un error en el servidor. Lo hemos reportado 
 msgid "Hide announcement"
 msgstr "Esconder noticia"
 
-#: templates/base.html:43
-msgid "clear messages"
-msgstr "Limpiar mensajes"
+#: templates/base.html:41
+#, fuzzy
+msgid "clear"
+msgstr "creador"
 
 #: templates/homepage.html:9
 msgid ""
@@ -634,38 +685,38 @@ msgid "Sign up"
 msgstr "Darse de alta"
 
 #: templates/site_base.html:30
-#: templates/site_base.html.py:34
+#: templates/site_base.html.py:38
 msgid "Home"
 msgstr "Inicio"
 
-#: templates/site_base.html:46
+#: templates/site_base.html:50
 msgid "Profile"
 msgstr "Perfil"
 
-#: templates/site_base.html:47
+#: templates/site_base.html:51
 #: templates/zwitschern/personal.html:6
 #: templates/zwitschern/personal.html:9
 msgid "Tweets"
 msgstr "Tweets"
 
-#: templates/site_base.html:56
+#: templates/site_base.html:60
 msgid "&copy; 2008 &lt;your company here&gt;"
 msgstr "&copy; 2008 &lt;nombre de la empresa&gt;"
 
-#: templates/site_base.html:57
+#: templates/site_base.html:61
 msgid "About Pinax"
 msgstr "Sobre Pinax"
 
-#: templates/site_base.html:58
+#: templates/site_base.html:62
 msgid "Pinax Blog"
 msgstr "Pinax Blog"
 
-#: templates/site_base.html:59
+#: templates/site_base.html:63
 #: templates/about/terms.html:5
 msgid "Terms of Service"
 msgstr "Términos del servicio"
 
-#: templates/site_base.html:60
+#: templates/site_base.html:64
 #: templates/about/privacy.html:5
 msgid "Privacy Policy"
 msgstr "Política de privacidad"
@@ -675,7 +726,7 @@ msgid "Put whatever you want on these tabs :-)"
 msgstr "Pon lo que quieras en estos tabs :-)"
 
 #: templates/about/about.html:5
-#: templates/profiles/profile.html:49
+#: templates/profiles/profile.html:56
 msgid "About"
 msgstr "Contacto"
 
@@ -782,13 +833,11 @@ msgstr "añadir"
 #: templates/account/login.html:10
 #: templates/account/password_reset.html:10
 #: templates/account/password_reset_done.html:10
-#: templates/friends_app/invitations.html:105
 #: templates/notification/notices.html:40
 msgid "Note"
 msgstr "Nota"
 
 #: templates/account/email.html:64
-#: templates/friends_app/invitations.html:105
 msgid "Not logged in."
 msgstr "No autorizado"
 
@@ -937,50 +986,50 @@ msgid "Invitations"
 msgstr "Invitaciones"
 
 #: templates/friends_app/invitations.html:11
-msgid "Join Requests Sent"
-msgstr "Enviada invitación"
-
-#: templates/friends_app/invitations.html:24
-msgid "No join requests sent."
-msgstr "Ninguna invitación enviada"
-
-#: templates/friends_app/invitations.html:27
 msgid "Invite someone new to join"
 msgstr "Invita a alguien nuevo"
 
-#: templates/friends_app/invitations.html:30
+#: templates/friends_app/invitations.html:14
 msgid "If you'd like to invite someone to join Pinax, you can enter their email address and a message for them below:"
 msgstr "Si quieres invitar alguien a Pinax, you puedes introducir su dirección de email y un mensaje para ellos debajo:"
 
-#: templates/friends_app/invitations.html:37
+#: templates/friends_app/invitations.html:21
 msgid "Someone with this email address has already joined:"
 msgstr "Alguién con ese email ya es usuario"
 
-#: templates/friends_app/invitations.html:51
-#: templates/profiles/profile.html:117
+#: templates/friends_app/invitations.html:35
+#: templates/profiles/profile.html:127
 msgid "invite"
 msgstr "invitar"
 
-#: templates/friends_app/invitations.html:57
-msgid "Friendship Requests Sent"
-msgstr "Petición de amistad enviada"
-
-#: templates/friends_app/invitations.html:70
-msgid "No friendship requests sent."
-msgstr "No hay peticiones de amistad enviadas"
-
-#: templates/friends_app/invitations.html:74
+#: templates/friends_app/invitations.html:39
 msgid "Friendship Requests Received"
 msgstr "Recibida petición de amistad"
 
-#: templates/friends_app/invitations.html:93
-#: templates/profiles/profile.html:107
+#: templates/friends_app/invitations.html:53
+#: templates/profiles/profile.html:115
 msgid "accept"
 msgstr "aceptar"
 
-#: templates/friends_app/invitations.html:101
+#: templates/friends_app/invitations.html:67
 msgid "No friendship requests received."
 msgstr "No hay peticiones de amistad recibidas."
+
+#: templates/friends_app/invitations.html:72
+msgid "Friendship Requests Sent"
+msgstr "Petición de amistad enviada"
+
+#: templates/friends_app/invitations.html:85
+msgid "No friendship requests sent."
+msgstr "No hay peticiones de amistad enviadas"
+
+#: templates/friends_app/invitations.html:90
+msgid "Join Requests Sent"
+msgstr "Enviada invitación"
+
+#: templates/friends_app/invitations.html:103
+msgid "No join requests sent."
+msgstr "Ninguna invitación enviada"
 
 #: templates/messages/base.html:11
 msgid "Compose"
@@ -1067,94 +1116,95 @@ msgstr "Por favor, corrige los siguientes errores"
 msgid "Already have an account? <a href=\"/account/login/?next=/openid/associations/\">Login here</a> to associate your OpenID with your existing account."
 msgstr "¿Ya tienes una cuenta? <a href=\"/account/login/?next=/openid/associations/\">Accede aquí</a> para asociar tus  OpenID con tu cuenta existente."
 
-#: templates/profiles/base.html:9
+#: templates/profiles/base.html:10
 msgid "Your Profile"
 msgstr "Tu perfil"
 
-#: templates/profiles/base.html:10
+#: templates/profiles/base.html:11
 #: templates/profiles/profiles.html:5
 msgid "All Profiles"
 msgstr "Todos los perfiles"
 
-#: templates/profiles/profile.html:6
-#: templates/profiles/profile.html.py:45
+#: templates/profiles/profile.html:7
+#: templates/profiles/profile.html.py:52
 #, python-format
 msgid "Profile for %(other_user)s"
 msgstr "Perfil de %(other_user)s"
 
-#: templates/profiles/profile.html:13
+#: templates/profiles/profile.html:14
 msgid "Your Friends"
 msgstr "Tus amigos"
 
-#: templates/profiles/profile.html:24
+#: templates/profiles/profile.html:28
 msgid "None. You should look at the list of <a href=\"/profiles/\">profiles</a> and see if there's anyone you know."
 msgstr "Ninguno. Tu puedes mirar a la lista de <a href=\"/profiles/\">perfiles</a> y ver si allí hay alguien que conozcas."
 
-#: templates/profiles/profile.html:31
+#: templates/profiles/profile.html:35
 #, python-format
 msgid "%(other_user)s's Friends"
 msgstr "Amigos de %(other_user)s"
 
-#: templates/profiles/profile.html:48
+#: templates/profiles/profile.html:55
 msgid "Name"
 msgstr "Nombre"
 
-#: templates/profiles/profile.html:51
+#: templates/profiles/profile.html:58
 msgid "Website"
 msgstr "Página web"
 
-#: templates/profiles/profile.html:54
+#: templates/profiles/profile.html:61
 msgid "Followers"
 msgstr "Seguidores"
 
-#: templates/profiles/profile.html:55
+#: templates/profiles/profile.html:62
 msgid "Following"
 msgstr "Seguidos"
 
-#: templates/profiles/profile.html:59
+#: templates/profiles/profile.html:66
 msgid "Edit profile"
 msgstr "Editar perfil"
 
-#: templates/profiles/profile.html:64
+#: templates/profiles/profile.html:71
 msgid "update"
 msgstr "actualizar"
 
-#: templates/profiles/profile.html:87
+#: templates/profiles/profile.html:95
 msgid "unfollow"
 msgstr "no seguir"
 
-#: templates/profiles/profile.html:89
-msgid "follow"
-msgstr "seguir"
+#: templates/profiles/profile.html:97
+#, fuzzy
+msgid "follow tweets"
+msgstr "All Tweets"
 
-#: templates/profiles/profile.html:95
+#: templates/profiles/profile.html:103
 #, python-format
 msgid "You are friends with %(other_user)s."
 msgstr "Tu eres amigo/a con %(other_user)s."
 
-#: templates/profiles/profile.html:95
+#: templates/profiles/profile.html:103
 msgid "Send a message"
 msgstr "Enviar mensaje"
 
-#: templates/profiles/profile.html:97
-msgid "Add As Friend"
-msgstr "Añadir como amigo/a"
-
-#: templates/profiles/profile.html:99
-#, python-format
-msgid "%(other_user)s has already requested friendship."
+#: templates/profiles/profile.html:106
+#, fuzzy, python-format
+msgid "%(other_user)s has requested friendship."
 msgstr "%(other_user)s ya ha enviado la petición de amistad."
 
-#: templates/profiles/profile.html:112
+#: templates/profiles/profile.html:121
 msgid "Friendship request sent."
 msgstr "Petición de amistad enviada"
 
-#: templates/profiles/profile.html:117
+#: templates/profiles/profile.html:123
+msgid "Add As Friend"
+msgstr "Añadir como amigo/a"
+
+#: templates/profiles/profile.html:127
 #, python-format
 msgid "%(other_user)s to be a friend."
 msgstr "%(other_user)s ser un amigo/a."
 
-#: templates/profiles/profile.html:136
+#: templates/profiles/profile.html:147
 msgid "<a href=\"/account/signup/\">Sign up</a> and <a href=\"/account/login/\">log in </a> to add this person as a friend."
 msgstr "<a href=\"/account/signup/\">Darte de alta</a> o <a href=\"/account/login/\"> registrate </a> para añadir esta persona como amigo/a."
 
@@ -1240,6 +1290,10 @@ msgstr "seguidor"
 msgid "followed"
 msgstr "seguido"
 
+#~ msgid "clear messages"
+#~ msgstr "Limpiar mensajes"
+#~ msgid "follow"
+#~ msgstr "seguir"
 #~ msgid "Manage Your OpenID Associations Here"
 #~ msgstr "Gestiona tus asociaciones OpenID aquí"
 
