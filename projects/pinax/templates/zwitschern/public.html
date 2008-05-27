@@ -5,6 +5,10 @@
 
 {% block head_title %}Pinax : {% blocktrans %}Public Tweets{% endblocktrans %}{% endblock %}
 
+{% block extra_head %}
+<link rel="alternate" type="application/atom+xml" title="Tweets Feed" href="/feeds/tweets/" />
+{% endblock %}
+
 {% block body %}
 <h1>{% trans "All Tweets" %}</h1>
 
@@ -12,7 +16,7 @@
 
 {% oembed %}
 {% for tweet in tweets %}
-<div class="tweet">
+<div class="tweet" id="t{{ tweet.id }}">
 <a href="{% url profiles.views.profile tweet.sender %}"><b>{{ tweet.sender }}</b></a>
 {{ tweet.html|safe }}
 <span class="timesince">{{ tweet.sent|timesince }} ago</span>
