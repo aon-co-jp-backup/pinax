@@ -1,9 +1,8 @@
 import things
-from tribes.models import Tribe
 
 class TribeThing(things.ModelThing):
-    created = things.OrderField(verbose_name_asc='Newest', 
-        verbose_name_desc='Oldest', url_asc='newest', url_desc='oldest', 
+    created = things.OrderField(verbose_name_asc='Oldest', 
+        verbose_name_desc='Newest', url_asc='oldest', url_desc='newest', 
         field_url='date')
     name = things.OrderField()
     members = things.OrderField(verbose_name_asc='Largest', 

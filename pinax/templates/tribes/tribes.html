@@ -6,6 +6,7 @@
 {% load order_by %}
 {% load extra_tagging_tags %}
 {% load tribe_tags %}
+{% load things_tags %}
 
 {% block head_title %}{% blocktrans %}Tribes{% endblocktrans %}{% endblock %}
 
@@ -16,7 +17,7 @@
     {% if user.is_authenticated %}
         <p><a href="#" onclick="$('#tribe_form').toggle(); return false;">{% trans "Start your own tribe" %}</a></p>
         
-        <form id="tribe_form" method="POST" action="{% url tribes_list %}" style="display: none;">
+        <form id="tribe_form" method="POST" action="{% url tribe_create %}" style="display: none;">
             {% get_tribe_form as tribe_form %}
             <table>
                 {{ tribe_form }}
@@ -28,29 +29,8 @@
         {% url acct_login as login_url %}
         <p>{% blocktrans %}<a href="{{ signup_url }}">Sign up</a> and <a href="{{ login_url }}">log in </a> to create your own tribe or join an existing one.{% endblocktrans %}</p>
     {% endif %}
-    {% if search_enabled %}
-        <form method="GET" action="">
-            <input type="text" name="search" value="{{ terms }}" />
-            <input type="submit" value="Search" />
-        </form>
-    {% endif %}
-    <p>Order by:
-        {% for f in fields %}
-            {% ifequal f field %}
-                {% if descending %}
-                    <a href="{{ f.full_url_asc }}">{{ f.verbose_name_asc }}</a> or 
-                    <b>{{ f.verbose_name_desc }}</b>
-                {% else %}
-                    <b>{{ f.verbose_name_asc }}</b> or 
-                    <a href="{{ f.full_url_desc }}">{{ f.verbose_name_desc }}</a>
-                {% endif %}
-            {% else %}
-                <a href="{{ f.full_url_asc }}">{{ f.verbose_name_asc }}</a> or 
-                <a href="{{ f.full_url_desc }}">{{ f.verbose_name_desc }}</a> 
-            {% endifequal %}
-            {% if not forloop.last %}, {% endif %}
-        {% endfor %}
-    </p>
+    {% display_search %}
+    {% display_ordering %}
     
     {% autopaginate objects 10 %}
     {% if objects %}
