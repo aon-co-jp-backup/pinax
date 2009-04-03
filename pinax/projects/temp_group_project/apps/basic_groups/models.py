@@ -6,7 +6,8 @@ from django.db import models
 from groups_ng.base import Group
 
 class BasicGroup(Group):
-    members = models.ManyToManyField(User, verbose_name=_('members'))
+    members = models.ManyToManyField(User, related_name='basic_groups',
+        verbose_name=_('members'))
 
     def get_absolute_url(self):
         return reverse('group_detail', args=[self.slug])
