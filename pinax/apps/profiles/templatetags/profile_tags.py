@@ -1,5 +1,4 @@
 from django import template
-from projects.forms import ProjectForm
 
 register = template.Library()
 
