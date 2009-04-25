@@ -1,5 +1,5 @@
 # please, just install those first so we don't need internet connection
-Genshi-0.5.1.tar.gz
+Genshi-0.5.1.zip
 setuptools-0.6c9.tar.gz
 python-openid-2.2.4.tar.gz
 pytz-2009f.zip
@@ -56,3 +56,4 @@ textile-2.1.3.tar.gz
 vobject-0.8.1c.tar.gz
 ybrowserauth-1.2.zip
 # PIL-1.1.6.tar.gz
+Pinax-0.7beta2.tar.gz
