@@ -14,13 +14,20 @@ The named urls in this app should enable the use of of the ``{% url %}``
 template tag as well as ``reverse`` lookups in your project code without having
 to know the implementation details of this app.
 
+
 profile_username_autocomplete
 -----------------------------
-Provides a call back url that uses the ``pinax.apps.autocomplete_app`` views to
-provide data back to the jQuery autocomplete_ plugin.
+
+An AJAX call back URL to the ``pinax.apps.autocomplete_app.views.username_autocomplete_friends``
+app that looks up and provides a list of data to the jQuery autocomplete_
+plugin.
+
+See :ref:`autocomplete app usage documentation <ref-autocomplete_app-gettingstarted-usage>`.
+
 
 profile_list
 ------------
+
 Upon GET request, this url will render a template named ``basic_profiles/profiles.html``
 by default with a list of users in context ordered by either ``date_joined`` descending
 or by ``username`` ascending.  This is further optionally limited with case-insensitive
@@ -40,8 +47,10 @@ This would result in the ``users`` context variable limited to users such as
 The value of ``order`` and ``search_terms`` are also passed to the template as
 context variables.
 
+
 profile_detail
 --------------
+
 This url will render a template named ``basic_profiles/profile.html`` by
 default with ``is_me`` and ``other_user`` as context variables where ``is_me``
 is a boolean that indicates whether or not ``other_user`` is the same as the
@@ -49,8 +58,10 @@ authenticated user making the request.
 
 :keyword arguments: The username for the profile to view that matches ``(?P<username>[\w\._-]+)``
 
+
 profile_edit
 ------------
+
 This url, when POSTed to will process the variables through a
 ``pinax.apps.basic_profiles.forms.ProfileForm`` instance, otherwise it will
 process a GET request by rendering ``basic_profiles/profile_edit.html`` by
@@ -59,26 +70,31 @@ for ajax calls.  It renders both of these templates with an instance of the
 ``pinax.apps.basic_profiles.ProfileForm`` as ``profile_form`` and an instance of
 ``pinax.apps.basic_profiles.models.Profile`` as ``profile``.
 
+
 Templates
 =========
 
 Templates should be placed in an ``basic_profiles/`` folder at the root of one of your
 template search paths.
 
+
 profiles.html
 -------------
 
 :context: ``users``, ``order``, ``search_terms``
+
 
 profile.html
 ------------
 
 :context: ``is_me``, ``other_user``
 
+
 profile_edit.html
 -----------------
 
 :context: ``profile``, ``profile_form``
+
 
 profile_edit_facebox.html
 -------------------------
@@ -89,12 +105,14 @@ profile_edit_facebox.html
 Modules
 =======
 
+
 ``pinax.apps.basic_profiles.admin``
 -----------------------------------
 
 .. automodule:: pinax.apps.basic_profiles.admin
    :members:
    :undoc-members:
+
 
 ``pinax.apps.basic_profiles.forms``
 -----------------------------------
@@ -103,12 +121,14 @@ Modules
    :members:
    :undoc-members:
 
+
 ``pinax.apps.basic_profiles.management.commands.create_profiles_for_users``
 ---------------------------------------------------------------------------
 
 .. automodule:: pinax.apps.basic_profiles.management.commands.create_profiles_for_users
    :members:
    :undoc-members:
+
 
 ``pinax.apps.basic_profiles.models``
 ------------------------------------
@@ -117,6 +137,7 @@ Modules
    :members:
    :undoc-members:
 
+
 ``pinax.apps.basic_profiles.templatetags.basic_profile_tags``
 -------------------------------------------------------------
 
@@ -124,12 +145,14 @@ Modules
    :members:
    :undoc-members:
 
+
 ``pinax.apps.basic_profiles.views``
 -----------------------------------
 
 .. automodule:: pinax.apps.basic_profiles.views
    :members:
    :undoc-members:
+
 
 
 .. _autocomplete: http://docs.jquery.com/Plugins/Autocomplete
