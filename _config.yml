@@ -9,6 +9,7 @@ baseurl: "/pinax" # the subpath of your site, e.g. /blog/
 url: "http://pinaxproject.com" # the base hostname & protocol for your site
 twitter_username: pinaxproject
 github_username:  pinax
+permalink: pretty
 
 # Build settings
 markdown: kramdown
