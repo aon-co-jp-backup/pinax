@@ -50,3 +50,5 @@ apps under [Eldarion org][eldarion-org] that are being donated to Pinax.
 [DUA]:     https://github.com/pinax/django-user-accounts/
 [eldarion-org]: https://github.com/eldarion/
 [pinax-repo]:  https://github.com/pinax/pinax/
+[eldarion.com]: http://eldarion.com
+
