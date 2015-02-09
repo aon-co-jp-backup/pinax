@@ -1,26 +1,34 @@
 ---
 layout: post
-title:  "Pinax Namespacing Changes"
+title:  "Pinax Donations and Namespacing"
 date:   2015-02-07 20:31:04
 categories: announcements
 ---
-Until recently, Pinax apps had no consistent naming scheme. Some things were
-named for function like [pinax-wiki][wiki], others didn't have Pinax in
-the name like [django-user-accounts][DUA], and yet others had Greek names like
-[anafero][anafero].
+Pinax was born as a single repository with bundled projects, apps, and themes.
 
-The history behind this stems from not being able to package namespaces when
-Pinax got started. With the recent effort by Eldarion to [danate their open source][donate]
-to the Pinax organziation, the Pinax team is making extra effort to clean
-code up, add documentation, etc. Part of this effort caused us to rethink
-the namespacing issue as well as the simple, functional names this would enable.
+In 2012, however, we began the process of unbundling it by pulling out the
+accounts app and giving birth to [django-user-acounts][DUA] to signal that while
+a framework, individual apps can easily stand on their own. Very quickly, the
+main [Pinax repo][pinax-repo] came to be just a README with all the individual
+apps, starter templates, and themes living in their own repos and packages under
+the [Pinax org][pinax-org].
 
-Some projects have already been converted over but there is still much to do.
+Beginning in late 2014, [Eldarion][eldarion.com] began donating a host their
+open source Django apps to the [Pinax org][pinax-org]. In the process, decisions
+were made to rename their oft Greek-inspired naming schemes to follow a more
+conventional and functional naming.
 
-You will start seeing some projects you are familiar with renamed and all of
-them dropped under a top level `pinax.*` namespace.
+We decided during this process to make the names as functional as possible. One
+side affect of this is using names that are most certainly naming collisions for
+top level packages, so we decided to namespace them under `pinax.*`.
 
-The thing that enables namespace packages is this bit:
+We want to be clear, though, that with very few exceptions, all these apps
+stand on their own and there are not requirements other than you are using
+Django. Where there are exceptions, it is where it makes sense for an app to
+leverage functionality from another ecosystem app.
+
+For those who are interested in just how we create namespaced packages, we
+wanted to share this tidbit that we spent some time figuring out:
 
 {% highlight python %}
 # pinax/__init__.py
@@ -32,14 +40,13 @@ This will tell `setup.py` to append to this folder in your `site-packages`
 instead of copying over it so as you install multiple Pinax packages you'll have
 a folder in `site-package/pinax/` that gets additional sub-packages added to it.
 
-We feel that will provide as stronger sense of an ecosystem and allow for great
-apps to be more easily discovered.
+So, to be clear, Pinax is an ecosystem of apps, starter projects, and themes. We
+have written most of them ourselves and they live under the [Pinax org][pinax-org],
+but the ecosystem can and has extended beyond this org as evidenced by all the
+apps under [Eldarion org][eldarion-org] that are being donated to Pinax.
 
-As we rename apps and/or convert them to a namespaced version of their prior
-selves, we'll announce it here on this blog.
 
-[wiki]:    https://github.com/pinax/pinax-wiki/
+[pinax-org]:    https://github.com/pinax/
 [DUA]:     https://github.com/pinax/django-user-accounts/
-[anafero]: https://github.com/eldarion/anafero
-[donate]:  http://eldarion.com/blog/2014/09/23/donating-pinax/
-
+[eldarion-org]: https://github.com/eldarion/
+[pinax-repo]:  https://github.com/pinax/pinax/
