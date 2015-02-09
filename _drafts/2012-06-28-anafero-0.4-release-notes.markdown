@@ -1,0 +1,16 @@
+---
+layout: post
+title: "anafero 0.4 Release Notes"
+date: 2012-06-28 01:13:11
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/a/anafero/anafero-0.4.tar.gz>
+
+This release includes the following:
+
+* 0.4
+* Add ability to define code generators external to anafero
+* Handle case when cookie isn't present
+* Add ability to pass in a user
+* Add ability to get a referral object from a request

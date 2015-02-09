@@ -1,0 +1,12 @@
+---
+layout: post
+title: "biblion 2.2.3 Release Notes"
+date: 2014-04-18 16:37:57
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/b/biblion/biblion-2.2.3.tar.gz>
+
+This release includes the following:
+
+* 2.2.3 - Fix some deprecations

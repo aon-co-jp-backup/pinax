@@ -1,0 +1,12 @@
+---
+layout: post
+title: "edge 0.3.1 Release Notes"
+date: 2011-08-12 18:56:06
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/e/edge/edge-0.3.1.tar.gz>
+
+This release includes the following:
+
+* initial commit of 0.3.1

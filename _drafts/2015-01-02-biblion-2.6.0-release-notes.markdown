@@ -1,0 +1,19 @@
+---
+layout: post
+title: "biblion 2.6.0 Release Notes"
+date: 2015-01-02 21:47:51
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/b/biblion/biblion-2.6.0.tar.gz>
+
+This release includes the following:
+
+* Bump for next release
+* Fix more templated bits
+* Remove support for Python 3 /  / The creole package we are using doesn't seem to support Python 3 yet
+* Fix flake8 issue
+* Fix travis config
+* Remove template code
+* Bring in line with pinax-starter-app
+* Change license to MIT

@@ -1,0 +1,15 @@
+---
+layout: post
+title: "oops 0.0.7 Release Notes"
+date: 2011-09-19 01:01:09
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/o/oops/oops-0.0.7.tar.gz>
+
+This release includes the following:
+
+* added setproctitle
+* fixed Pinax requirement
+* added psycopg2 and gunicorn
+* first pass at oops project with django-sentry

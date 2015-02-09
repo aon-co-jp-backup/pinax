@@ -1,0 +1,13 @@
+---
+layout: post
+title: "anafero 1.1 Release Notes"
+date: 2013-12-20 12:57:24
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/a/anafero/anafero-1.1.tar.gz>
+
+This release includes the following:
+
+* 1.1
+* refs #9 - use builtin json instead of deprecated django.utils.simplejson

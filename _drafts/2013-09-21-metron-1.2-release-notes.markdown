@@ -1,0 +1,13 @@
+---
+layout: post
+title: "metron 1.2 Release Notes"
+date: 2013-09-21 19:14:48
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/m/metron/metron-1.2.tar.gz>
+
+This release includes the following:
+
+* Upgrade mixpanel
+* added note about commercial support

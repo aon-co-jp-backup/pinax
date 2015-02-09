@@ -1,0 +1,12 @@
+---
+layout: post
+title: "identeco 0.3.2 Release Notes"
+date: 2013-12-12 19:27:02
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/i/identeco/identeco-0.3.2.tar.gz>
+
+This release includes the following:
+
+* added support for trusted domains

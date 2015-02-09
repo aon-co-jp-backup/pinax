@@ -1,0 +1,12 @@
+---
+layout: post
+title: "eventlog 0.5.5 Release Notes"
+date: 2012-10-15 13:57:17
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/e/eventlog/eventlog-0.5.5.tar.gz>
+
+This release includes the following:
+
+* 0.5.5 /  / use timezone.now instead of datetime.now

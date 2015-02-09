@@ -1,0 +1,15 @@
+---
+layout: post
+title: "anafero 1.0.1 Release Notes"
+date: 2013-08-28 15:11:33
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/a/anafero/anafero-1.0.1.tar.gz>
+
+This release includes the following:
+
+* 1.0.1
+* Fix deprecation warning in urls
+* added note about commercial support
+* updated LICENSE year

@@ -1,0 +1,32 @@
+---
+layout: post
+title: "formly 0.5.2 Release Notes"
+date: 2013-10-23 19:03:05
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/f/formly/formly-0.5.2.tar.gz>
+
+This release includes the following:
+
+* 0.5.2
+* Change how follow on questions are done
+* Add follow on questions if they exist
+* Set page value
+* 0.5.1
+* Disable validation due to circular logic
+* 0.5
+* Remove unique constraint
+* Changelog note
+* Make urls Django 1.5 compatible
+* Add maximum choices field
+* Page is now optional for a Field but only when it's the target of a FieldChoice
+* FieldChoice targets are now other Fields
+* Remove ability to edit targets in design
+* Change label of targets
+* Add ability to render/answer drill down questions
+* Remove the ability to edit targets in design mode
+* Remove field choice influencing page navigation
+* Add easy controls for moving page up and down in order
+* Lints
+* Remove unnecessary import in favor of site startup.py

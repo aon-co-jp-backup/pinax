@@ -1,0 +1,25 @@
+---
+layout: post
+title: "kaleo 1.5 Release Notes"
+date: 2014-05-23 18:35:47
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/k/kaleo/kaleo-1.5.tar.gz>
+
+This release includes the following:
+
+* bumped version for next release
+* improved InvitationStat DB update on invite send
+* allow JoinInvitation.invite to defer sending
+* Not ready for Django 1.7+ compatiblity yet. /  / Once DUA hits 1.0, we can uncomment these lines
+* Make sure receivers are activated for tests
+* Update setup.py for py3 compatibility
+* DUA needs to be be in INSTALLED_APPS
+* Fix some typos
+* Fix Makefile
+* Clean up style
+* Fix tox.ini
+* added tests for JoinInvitation
+* added app tests directory and files
+* added app boilerplate

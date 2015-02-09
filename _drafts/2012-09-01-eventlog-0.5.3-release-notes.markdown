@@ -1,0 +1,14 @@
+---
+layout: post
+title: "eventlog 0.5.3 Release Notes"
+date: 2012-09-01 14:49:05
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/e/eventlog/eventlog-0.5.3.tar.gz>
+
+This release includes the following:
+
+* 0.5.3
+* Version bump on django-jsonfield. Fixes #3.
+* Documentation update. Fixes #2

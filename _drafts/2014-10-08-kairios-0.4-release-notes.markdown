@@ -1,0 +1,23 @@
+---
+layout: post
+title: "kairios 0.4 Release Notes"
+date: 2014-10-08 18:12:58
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/k/kairios/kairios-0.4.tar.gz>
+
+This release includes the following:
+
+* 0.4.1
+* Fix typo
+* 0.4
+* Allow passing in of timezone
+* fixed indentation
+* setup flake8
+* flake8 everything but don't worry about complexity
+* added flake8 configuration
+* whitespace
+* Update README.rst
+* Create .travis.yml
+* Update copyright year

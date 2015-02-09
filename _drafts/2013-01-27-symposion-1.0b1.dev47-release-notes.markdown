@@ -1,0 +1,15 @@
+---
+layout: post
+title: "symposion 1.0b1.dev47 Release Notes"
+date: 2013-01-27 09:46:13
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev47.tar.gz>
+
+This release includes the following:
+
+* Added CONTRIBUTING documentation to repository
+* Update symposion/templates/sponsorship/_sponsor_link.html /  / Improved reference format and used pk rather than id  / - thanks to trbs for the suggestion
+* Add ids to sponsor images to allow linking to each sponsor's entry.
+* allow dashes in slugs of schedule names

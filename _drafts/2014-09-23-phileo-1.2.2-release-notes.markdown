@@ -1,0 +1,14 @@
+---
+layout: post
+title: "phileo 1.2.2 Release Notes"
+date: 2014-09-23 16:42:35
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/p/phileo/phileo-1.2.2.tar.gz>
+
+This release includes the following:
+
+* Bumped for next release
+* 1.2.2
+* mimetype argument is deprecated in Django 1.6 and removed in 1.7

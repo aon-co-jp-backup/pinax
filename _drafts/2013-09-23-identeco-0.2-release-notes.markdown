@@ -1,0 +1,13 @@
+---
+layout: post
+title: "identeco 0.2 Release Notes"
+date: 2013-09-23 17:45:20
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/i/identeco/identeco-0.2.tar.gz>
+
+This release includes the following:
+
+* bumped version
+* added sreg support

@@ -1,0 +1,15 @@
+---
+layout: post
+title: "symposion 1.0b1 Release Notes"
+date: 2013-03-14 08:51:41
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.tar.gz>
+
+This release includes the following:
+
+* bump version for dev
+* dev2 release
+* bump version for beta 2
+* added create_slot schedule helper

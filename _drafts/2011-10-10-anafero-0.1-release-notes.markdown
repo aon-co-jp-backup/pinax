@@ -1,0 +1,21 @@
+---
+layout: post
+title: "anafero 0.1 Release Notes"
+date: 2011-10-10 04:43:29
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/a/anafero/anafero-0.1.tar.gz>
+
+This release includes the following:
+
+* 0.1
+* Add MANIFEST.in to properly package up the anafero
+* Update javascript example to something that works
+* Add setting to support changing the protocol of the links
+* Correct a bunch of silly mistakes
+* Put app templates in the right place
+* Add utility class method for recording other actions
+* Add SessionJumpingMiddleware to update ReferralResponses for authed users who had previously been unauthed
+* Add documentation
+* initial commit

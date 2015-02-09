@@ -1,0 +1,25 @@
+---
+layout: post
+title: "kairios 0.3 Release Notes"
+date: 2014-01-16 03:19:32
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/k/kairios/kairios-0.3.tar.gz>
+
+This release includes the following:
+
+* 0.3
+* Pass in date to context
+* 0.2
+* Pass full context through
+* Do not stomp the events variable
+* Pass events list to context
+* Reduce branching and make easier to read
+* take date as an explicit argument to calendar rather than kwargs
+* updated README with usage instructions
+* updated README, version and setup
+* added license
+* consolidated code from a variety of different sites
+* moved README to rst
+* initial commit

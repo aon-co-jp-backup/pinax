@@ -1,0 +1,14 @@
+---
+layout: post
+title: "anafero 0.5.1 Release Notes"
+date: 2012-08-02 23:05:28
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/a/anafero/anafero-0.5.1.tar.gz>
+
+This release includes the following:
+
+* 0.5.2 - Fixed a stupid mistake
+* 0.5.1
+* Upgrade session fixing to be compatible with 1.4 /  / Thanks to @brosner for the utility function that / fixes this to remain backwards compatible with / Django 1.3

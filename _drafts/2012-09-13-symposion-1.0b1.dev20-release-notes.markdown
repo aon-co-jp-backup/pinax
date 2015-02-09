@@ -1,0 +1,17 @@
+---
+layout: post
+title: "symposion 1.0b1.dev20 Release Notes"
+date: 2012-09-13 21:41:08
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev20.tar.gz>
+
+This release includes the following:
+
+* bump version
+* add management command to reset sponsor benefits
+* add basic benefits fixture
+* increased slot edit modal height
+* removed empty_label=None on SlotEditForm.presentation
+* improved Proposal.proposal /  /  * renamed the field to avoid nasty underscore /  * fixed code to avoid extra query

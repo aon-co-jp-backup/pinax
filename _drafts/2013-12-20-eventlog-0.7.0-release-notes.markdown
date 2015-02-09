@@ -1,0 +1,15 @@
+---
+layout: post
+title: "eventlog 0.7.0 Release Notes"
+date: 2013-12-20 15:06:02
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/e/eventlog/eventlog-0.7.0.tar.gz>
+
+This release includes the following:
+
+* 0.7.0
+* Remove Pusher integration
+* Support custom user model
+* Clean up whitespace

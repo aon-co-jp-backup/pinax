@@ -1,0 +1,14 @@
+---
+layout: post
+title: "phileo 0.5 Release Notes"
+date: 2012-09-05 14:52:17
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/p/phileo/phileo-0.5.tar.gz>
+
+This release includes the following:
+
+* 0.5
+* Add a tag to get who likes a given object
+* Documentation bug

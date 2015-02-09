@@ -1,0 +1,28 @@
+---
+layout: post
+title: "biblion 2.1.0 Release Notes"
+date: 2014-01-24 18:41:10
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/b/biblion/biblion-2.1.0.tar.gz>
+
+This release includes the following:
+
+* 2.1.0
+* Forgot another place where published gets set
+* Send signal when published
+* Not ready for Python 3
+* More empty strings
+* Actually import it the right way
+* Upgrade twitter to latest
+* urllib2 is merged into urllib in python 3
+* Remove another u''
+* Just use strings
+* Clean up flask8 violations
+* Output stats and benchmark
+* Only care about ignoring line length
+* Add check for complexity
+* Fix badge for travis
+* Exit immediately if lint fails
+* Add Travis/Coveralls

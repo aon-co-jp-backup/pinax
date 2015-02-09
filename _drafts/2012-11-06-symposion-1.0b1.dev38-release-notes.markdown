@@ -1,0 +1,22 @@
+---
+layout: post
+title: "symposion 1.0b1.dev38 Release Notes"
+date: 2012-11-06 18:14:20
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev38.tar.gz>
+
+This release includes the following:
+
+* bumped version
+* added external URL field to sponsor application form
+* finish removing the category from example proposals
+* simplify example proposal models
+* add reviews, schedule urls
+* remove dashboard template from project
+* update requirements for latest versions
+* add in additional symposion apps
+* remove mutt from INSTALLED_APPS
+* remove django-mptt as it's unused
+* remove django compressor as it's unused

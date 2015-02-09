@@ -1,0 +1,26 @@
+---
+layout: post
+title: "kaleo 1.2b2 Release Notes"
+date: 2013-07-05 21:48:26
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/k/kaleo/kaleo-1.2b2.tar.gz>
+
+This release includes the following:
+
+* Update docs for the bootstrap-ajax -> eldarion-ajax rename
+* 1.2b2
+* Update change log
+* Style clean up
+* Support Django 1.5 custom user models
+* Remove import from urls.py that hooks up receivers /  / This is a backwards incompatible change, of which the details / can be found in the docs/changelog.rst /  / Fixes #5
+* Update changelog
+* Add a joined independently signal
+* Handle case where a user skips email confirmation /  / In DUA, if you are invited to a site and you end / up signing up with the same email address, DUA will / skip the confirmation cycle and count it as / confirmed already.
+* Refactor email confirmed receiver to model method
+* Fix add invites bug /  / This fixes the bug where adding invites to a user / would set them to have unlimited invites.
+* Fix topoff invites bug /  / This fixes the bug where topping off invites would / remove someone's unlimited invites.
+* Style nit
+* Refactor invite accepting logic into model methods
+* Bumped version for next release

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "symposion 1.0b1.dev26 Release Notes"
+date: 2012-09-28 23:37:21
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev26.tar.gz>
+
+This release includes the following:
+
+* bumped version for next release
+* added box to schedule detail
+* translation on proposal templates

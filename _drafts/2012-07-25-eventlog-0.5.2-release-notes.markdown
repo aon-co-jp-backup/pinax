@@ -1,0 +1,26 @@
+---
+layout: post
+title: "eventlog 0.5.2 Release Notes"
+date: 2012-07-25 23:04:19
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/e/eventlog/eventlog-0.5.2.tar.gz>
+
+This release includes the following:
+
+* Update installation docs
+* 0.5.2
+* Add documentation
+* Upgrade to use django-jsonfield
+* 0.5
+* Fail safely from Pusher fails
+* 0.4
+* Add active_seven and active_thirty users
+* Add template tag user_event_log
+* 0.3
+* Add some stats
+* handle none user
+* Add pusher support
+* Fix packaging
+* Initial commit

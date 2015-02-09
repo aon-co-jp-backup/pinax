@@ -1,0 +1,14 @@
+---
+layout: post
+title: "eventlog 0.6.3 Release Notes"
+date: 2013-07-01 16:04:42
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/e/eventlog/eventlog-0.6.3.tar.gz>
+
+This release includes the following:
+
+* 0.6.4 - add index to action
+* 0.6.3
+* added db_index=True for Log.timestamp to speed up stats queries

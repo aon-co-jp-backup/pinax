@@ -1,0 +1,13 @@
+---
+layout: post
+title: "formly 0.4.1 Release Notes"
+date: 2012-08-13 20:33:10
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/f/formly/formly-0.4.1.tar.gz>
+
+This release includes the following:
+
+* 0.4.1
+* Fix serialization bug

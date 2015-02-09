@@ -1,0 +1,22 @@
+---
+layout: post
+title: "phileo 1.2.1 Release Notes"
+date: 2014-09-17 14:30:27
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/p/phileo/phileo-1.2.1.tar.gz>
+
+This release includes the following:
+
+* 1.2.1
+* pass object to super class to get the right permission for the object
+* Point badges to correct repo /  / Fixes #22.
+* flake8 compliance
+* flake8 for setup and docs
+* flake8 everything but don't worry about complexity
+* added flake8 config
+* whitespace
+* Update README.rst
+* Create .travis.yml
+* Add LICENSE file

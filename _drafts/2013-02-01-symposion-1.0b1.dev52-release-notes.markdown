@@ -1,0 +1,12 @@
+---
+layout: post
+title: "symposion 1.0b1.dev52 Release Notes"
+date: 2013-02-01 05:50:08
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev52.tar.gz>
+
+This release includes the following:
+
+* include keynote in presentation slots, release, bump dev version

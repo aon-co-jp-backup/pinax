@@ -1,0 +1,12 @@
+---
+layout: post
+title: "metron 1.3 Release Notes"
+date: 2013-10-02 21:54:32
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/m/metron/metron-1.3.tar.gz>
+
+This release includes the following:
+
+* added request.metron_site_id support

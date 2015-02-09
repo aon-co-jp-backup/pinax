@@ -1,0 +1,13 @@
+---
+layout: post
+title: "biblion 2.5.1 Release Notes"
+date: 2014-12-31 13:30:03
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/b/biblion/biblion-2.5.1.tar.gz>
+
+This release includes the following:
+
+* Bump for next release
+* Add signal for redirections

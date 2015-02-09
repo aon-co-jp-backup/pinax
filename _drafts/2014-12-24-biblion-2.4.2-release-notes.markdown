@@ -1,0 +1,13 @@
+---
+layout: post
+title: "biblion 2.4.2 Release Notes"
+date: 2014-12-24 02:39:22
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/b/biblion/biblion-2.4.2.tar.gz>
+
+This release includes the following:
+
+* Bump version for next release
+* Specify fields

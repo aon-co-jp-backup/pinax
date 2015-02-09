@@ -1,0 +1,20 @@
+---
+layout: post
+title: "phileo 1.1.1 Release Notes"
+date: 2014-06-18 15:49:56
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/p/phileo/phileo-1.1.1.tar.gz>
+
+This release includes the following:
+
+* added dist to gitignore
+* updated docs
+* if can't like still pass through off configuration
+* added gitignore
+* per-model callables to test allowability
+* version and changelog update
+* shortcut perm if not authenticated
+* Fix doc bug
+* Fix minor docs typos

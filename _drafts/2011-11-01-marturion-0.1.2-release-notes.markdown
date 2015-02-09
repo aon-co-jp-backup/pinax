@@ -1,0 +1,17 @@
+---
+layout: post
+title: "marturion 0.1.2 Release Notes"
+date: 2011-11-01 04:49:29
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/m/marturion/marturion-0.1.2.tar.gz>
+
+This release includes the following:
+
+* 0.1.4
+* Update change log
+* Fix random attribution bug
+* More typo fixes
+* 0.1.2
+* Fix stupid typo

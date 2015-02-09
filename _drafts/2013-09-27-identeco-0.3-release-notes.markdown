@@ -1,0 +1,17 @@
+---
+layout: post
+title: "identeco 0.3 Release Notes"
+date: 2013-09-27 21:50:22
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/i/identeco/identeco-0.3.tar.gz>
+
+This release includes the following:
+
+* bumped version
+* more whitespace cleanup
+* cleaned up more whitespace
+* fixed copy/paste bug
+* cleaned up whitespace
+* added support for custom login_required

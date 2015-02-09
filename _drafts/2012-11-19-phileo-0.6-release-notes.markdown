@@ -1,0 +1,14 @@
+---
+layout: post
+title: "phileo 0.6 Release Notes"
+date: 2012-11-19 21:55:18
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/p/phileo/phileo-0.6.tar.gz>
+
+This release includes the following:
+
+* 0.6
+* Add a phileo_widget_brief tag
+* Whitespace nit

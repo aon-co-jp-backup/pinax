@@ -1,0 +1,16 @@
+---
+layout: post
+title: "symposion 1.0b1.dev27 Release Notes"
+date: 2012-10-01 16:59:04
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev27.tar.gz>
+
+This release includes the following:
+
+* convert form to bootstrap
+* remove reference to uniform
+* removed unused template
+* Bumped version for next release
+* Removed default values of one from ProposalResult denormalized fields /  / The original default value of one assumed ProposalResult was being created / when a Review was created which meant a comment and a vote was made. This is / no longer the case from changes after the original change and has caused off / by one errors in the denormalized count.

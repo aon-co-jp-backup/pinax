@@ -1,0 +1,17 @@
+---
+layout: post
+title: "symposion 1.0b1.dev40 Release Notes"
+date: 2012-11-25 20:09:38
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev40.tar.gz>
+
+This release includes the following:
+
+* bump dev version
+* bump to dev42
+* content override is optional
+* bump version
+* add some columns to schedule admin lists
+* provide string representations for schedule models

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "eventlog 0.5.4 Release Notes"
+date: 2012-09-02 02:44:57
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/e/eventlog/eventlog-0.5.4.tar.gz>
+
+This release includes the following:
+
+* Set user to null on delete

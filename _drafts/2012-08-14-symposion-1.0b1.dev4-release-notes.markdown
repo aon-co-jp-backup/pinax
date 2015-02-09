@@ -1,0 +1,28 @@
+---
+layout: post
+title: "symposion 1.0b1.dev4 Release Notes"
+date: 2012-08-14 19:57:08
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev4.tar.gz>
+
+This release includes the following:
+
+* bump version
+* move comment form below conversation
+* use proposals base for all proposals templates
+* bump version
+* include documents
+* remove second additional notes
+* fix label so it isn't cut off
+* fix addl speaker display
+* add section to review_section context
+* fix email bug with teams
+* fix dashboard issue
+* add review message form
+* added method for determining if section is open for proposals and redirect away from form if not
+* dev5
+* package up txt templates
+* ready for 1.0b1.dev4 release
+* made voting threshold configurable

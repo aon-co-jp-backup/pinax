@@ -1,0 +1,16 @@
+---
+layout: post
+title: "symposion 1.0b1.dev36 Release Notes"
+date: 2012-10-26 22:01:29
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev36.tar.gz>
+
+This release includes the following:
+
+* Bumped version for next release
+* fixed content_override on public schedule
+* Bumped version for next release
+* added markitup on Slot content override
+* added ability to edit non-talk slots

@@ -1,0 +1,13 @@
+---
+layout: post
+title: "anafero 0.6 Release Notes"
+date: 2012-08-06 20:25:07
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/a/anafero/anafero-0.6.tar.gz>
+
+This release includes the following:
+
+* 0.6
+* Add full context to the create_referral tag

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "biblion 2.0.0 Release Notes"
+date: 2014-01-02 01:21:20
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/b/biblion/biblion-2.0.0.tar.gz>
+
+This release includes the following:
+
+* 2.0.0 version bump
+* Add markup selection by individual post
+* Update Pygments version

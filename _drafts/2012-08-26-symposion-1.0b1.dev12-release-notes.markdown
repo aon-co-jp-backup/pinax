@@ -1,0 +1,17 @@
+---
+layout: post
+title: "symposion 1.0b1.dev12 Release Notes"
+date: 2012-08-26 00:01:20
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev12.tar.gz>
+
+This release includes the following:
+
+* bump version
+* only run generator on proposals with a selected status
+* use generator to ensure proposals are filtered by speaker
+* proposal_count is unused
+* restrict status view to reviewers
+* bump version

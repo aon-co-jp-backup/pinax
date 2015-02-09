@@ -1,0 +1,12 @@
+---
+layout: post
+title: "symposion 1.0b1.dev11 Release Notes"
+date: 2012-08-24 15:46:59
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev11.tar.gz>
+
+This release includes the following:
+
+* add proposal leave template

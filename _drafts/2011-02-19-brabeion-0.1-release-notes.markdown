@@ -1,0 +1,99 @@
+---
+layout: post
+title: "brabeion 0.1 Release Notes"
+date: 2011-02-19 02:24:15
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/b/brabeion/brabeion-0.1.tar.gz>
+
+This release includes the following:
+
+* bump for 0.1
+* 0.1.dev14
+* fixed incorrect sending of badge_awarded signal (due to variable re-name)
+* renamed a local variable to make it more clear what it is and pass it to callable user_message
+* 0.1.dev12
+* renamed Badge.message to Badge.user_message and accept a callable
+* cleaned up send_badge_message signal handler and handle only the AttributeError
+* Merge remote branch 'joshourisman/master'
+* Merge branch 'master' of github.com:eldarion/brabeion
+* Killed an internal only class that wasn't serving much purpose.
+* fixed .gitignore to work with forced created directories
+* force creation of Sphinx directories
+* corrected release variable in conf.py
+* added requirements for development environment
+* added setup.cfg used for documentation building/uploading
+* Clear up the asynchronous badges section
+* Don't use get_profile()
+* Lots more details
+* Be a bit more verbose in describing what brabeion does.
+* Point the readme at the netire docs directory
+* Better metadata
+* Better text and better interlinking.
+* Document the model.
+* Added docs for signals
+* Added docs for the templatetags
+* Merge branch 'master' of github.com:eldarion/brabeion
+* Added more, better, and awesomer docs.
+* moved messaging into signal handler; much cleaner and requires no other modifications this way
+* modified BadgeAwarded to accept a message argument and actually_possibly_award to send messages when specified
+* 0.1.dev11
+* Merge branch 'master' of github.com:eldarion/brabeion
+* AwardedBadge now proxies attributes from it's badge.
+* 0.1.dev10
+* Merge branch 'master' of github.com:eldarion/brabeion
+* Added a badges for user tag.
+* 0.1.dev9 (dev8 was lost in battle due to stale MANIFEST)
+* 
+* 0.1.dev7
+* Update setup.py script ofr new package.
+* 0.1.dev6
+* Implemented a badge_count templatetag.
+* Merge branch 'master' of git@github.com:eldarion/brabeion
+* Added ignore_result to the celery task.
+* indentation is wrong in docs
+* Work with python2.4, losing the context manager hotness is sad.
+* Remove a python2.5 dependency.
+* Merge branch 'master' of git@github.com:eldarion/brabeion
+* Make loading the user on a BadgeAward lazy.
+* Mutating state is ok, but you still need to return it.
+* corrected template name
+* bump
+* fixed URL view name and name
+* 0.1.dev3
+* optional celery
+* bump dev version
+* put back some accidently removed code
+* added views and URLs
+* Added support for the async attribute on badges.
+* Support awarding badges to other users.
+* Fix force_timestamp
+* Update docs to reccomend kwarg usage for BadgeAwarded.
+* Allow overiding the timestamp on badges.
+* Send a signal when a badge has been awarded.
+* Added tests, fixed bugs.
+* Started adding tests.
+* Correct the model name.
+* Update the docs for the new public API.
+* Fix a typo
+* reorganize the modules, and imports
+* Merge branch 'master' of git@github.com:eldarion/brabeion
+* A fix
+* whitespaces
+* Remove a superflous condition
+* Correct a pair of issues in the setup.py
+* Correct the capitalization of Django.
+* Change imports to conform to the pinax style guide.
+* Corrected another pair of typos.
+* Corrected a typo
+* Added some initial usage docs.
+* Complete the renaming of codename to slug
+* Rename Badge.name to Badge.slug
+* Fix a typo in a comment
+* Added a working setup.py file
+* Added contents to the license.
+* Correct a few errors pyflakes caught.
+* Added a convenient API for accessing info about the AwardedBadge.
+* Added the primary instantiation of the BadgeCache.
+* Initial checkin.

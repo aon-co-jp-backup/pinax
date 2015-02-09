@@ -1,0 +1,22 @@
+---
+layout: post
+title: "metron 1.3.2 Release Notes"
+date: 2014-08-24 17:12:36
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/m/metron/metron-1.3.2.tar.gz>
+
+This release includes the following:
+
+* bumped version for next release
+* bumped version for release
+* fixed flake8 in setup and docs
+* add flake8 configuration
+* flake8 everything but don't do complexity
+* whitespace
+* Update README.rst
+* Create .travis.yml
+* Update copyright year
+* Actions were rendering in the JavaScript block with unicode u'' prefix. Removed repr block.
+* updated setup.read to work on Python 3.3+

@@ -1,0 +1,30 @@
+---
+layout: post
+title: "symposion 1.0b1.dev22 Release Notes"
+date: 2012-09-20 02:51:22
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev22.tar.gz>
+
+This release includes the following:
+
+* bumped version for next release
+* reverted debug output
+* bumped version for next release
+* fixed schedule slot room ordering
+* show time and location in schedule list
+* added Room.__unicode__
+* added SLot.rooms property
+* improved ordering of URLs
+* pass in schedule to schedule_list and show section name on section list
+* fixed schedule URLs
+* fixed URLs and views to use section slug correctly
+* removed unused form in schedule_edit
+* exclude cancelled presentations from being slotted
+* don't show cancelled presentations on schedule list
+* added ordering to presentations
+* added ability to remove content from slots
+* improved styling of schedule list
+* cleaned up styling of schedule edit table including centering room names
+* make slot edit just a link on existing presentation title

@@ -1,0 +1,18 @@
+---
+layout: post
+title: "kaleo 0.4 Release Notes"
+date: 2012-03-20 02:26:17
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/k/kaleo/kaleo-0.4.tar.gz>
+
+This release includes the following:
+
+* updated version and release in conf.py
+* updated version and CHANGELOG
+* Merge branch 'dua'
+* fixed signal receiver bug and better naming
+* added missing import
+* updated for 1.4 and django-user-accounts
+* Update docs/conf.py

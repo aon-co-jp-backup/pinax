@@ -1,0 +1,12 @@
+---
+layout: post
+title: "eventlog 0.6.2 Release Notes"
+date: 2013-05-06 15:30:16
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/e/eventlog/eventlog-0.6.2.tar.gz>
+
+This release includes the following:
+
+* Change from setup_requires to install_requires

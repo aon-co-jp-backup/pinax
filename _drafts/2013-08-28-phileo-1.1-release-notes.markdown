@@ -1,0 +1,21 @@
+---
+layout: post
+title: "phileo 1.1 Release Notes"
+date: 2013-08-28 15:05:07
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/p/phileo/phileo-1.1.tar.gz>
+
+This release includes the following:
+
+* 1.1
+* Fix deprecated url import
+* Whitespace
+* Fix typo in install doc
+* Merge remote-tracking branch 'upstream/master'
+* Fixed templatetag docs
+* Fixed link syntax.
+* Point to eldarion ajax.
+* Fix potential unicode issues with Like.__unicode__()
+* Add forward-compatibility with Django 1.5 custom user models

@@ -1,0 +1,21 @@
+---
+layout: post
+title: "symposion 1.0b1.dev24 Release Notes"
+date: 2012-09-21 01:26:09
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/s/symposion/symposion-1.0b1.dev24.tar.gz>
+
+This release includes the following:
+
+* bumped version for next release
+* prevent default behavior of anchor when editing slot
+* removed slugless URL names
+* initial presentation detail page and a couple of other tweaks
+* added schedule_presentation_detail
+* moved _grid to _edit_grid and implemented read-only grid version
+* added day timetables to schedule_detail
+* bumped version for next release
+* removed debugging prints and updated Presentation field name
+* reverted incorrect guarding which removed the whole point of promote_proposal and ensured it was never called
