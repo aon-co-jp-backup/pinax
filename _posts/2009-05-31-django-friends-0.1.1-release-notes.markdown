@@ -9,7 +9,5 @@ Download: <https://pypi.python.org/packages/source/d/django-friends/django-frien
 
 This release includes the following:
 
-* Fixed #169 /  / Signed-off-by: James Tauber <jtauber@jtauber.com>
-* Fixed #169
 * Fixed a mistake when fixing 2.6 DeprecationWarning with sha.
 * Fixed 2.6 DeprecationWarning with sha module.
