@@ -7,8 +7,4 @@ categories: release-notes
 
 Download: <https://pypi.python.org/packages/source/p/phileo/phileo-0.1.tar.gz>
 
-This release includes the following:
-
-* 0.1
-* make name lowercase
-* initial commit
+This is the initial release of phileo, a liking app for Django.
