@@ -9,9 +9,6 @@ Download: <https://pypi.python.org/packages/source/d/django-email-confirmation/d
 
 This release includes the following:
 
-* bumped version to 0.1.4
 * added a CHANGELOG
 * added support for DEFAULT_HTTP_PROTOCOL fallback
-* Merge commit 'jtauber/master'
-* Added an e-mail confirmation signal
-* bumped version
+* added an e-mail confirmation signal
