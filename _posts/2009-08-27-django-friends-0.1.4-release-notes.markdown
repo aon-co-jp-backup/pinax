@@ -9,7 +9,5 @@ Download: <https://pypi.python.org/packages/source/d/django-friends/django-frien
 
 This release includes the following:
 
-* bumped version to 0.1.4
-* Merge commit 'jezdez/master'
-* added SITE_NAME and CONTACT_EMAIL to context when rendering join invitation subject and message templates.
-* Merge commit 'jtauber/master'
+* Supply SITE_NAME and CONTACT_EMAIL to template rendering for invitations
+
