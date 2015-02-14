@@ -1,13 +1,0 @@
----
-layout: post
-title: "edge 0.4.0 Release Notes"
-date: 2014-07-10 14:02:58
-categories: release-notes
----
-
-Download: <https://pypi.python.org/packages/source/e/edge/edge-0.4.0.tar.gz>
-
-This release includes the following:
-
-* Increment version
-* Updated directed_edge.py from source /  / Directed Edge still does not maintained a packaged version / of their Python bindings, so all this is, is a copy of the source / from: /  /   https://github.com/directededge/directed-edge-bindings/blob/master/Python/directed_edge.py
