@@ -9,10 +9,7 @@ Download: <https://pypi.python.org/packages/source/k/kaleo/kaleo-0.2.tar.gz>
 
 This release includes the following:
 
-* bump docs version
 * added signals to TOC
-* 0.2
 * documented the signals
-* 0.2.dev1
 * enable unlimited invitations
 * added ability to set the default allocation of invites for new users
