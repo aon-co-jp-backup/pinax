@@ -1,0 +1,10 @@
+---
+layout: post
+title: "kaleo 0.1 Release Notes"
+date: 2011-08-28 21:26:19
+categories: release-notes
+---
+
+Download: <https://pypi.python.org/packages/source/k/kaleo/kaleo-0.1.tar.gz>
+
+This is the initial release for kaleo, a site invitation app for Django.
