@@ -10,6 +10,8 @@ url: "http://pinaxproject.com" # the base hostname & protocol for your site
 twitter_username: pinaxproject
 github_username:  pinax
 permalink: pretty
+paginate: 10
+lsi: true
 
 # Build settings
 markdown: kramdown
