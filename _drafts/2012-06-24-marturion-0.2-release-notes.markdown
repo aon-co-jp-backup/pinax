@@ -1,15 +1,0 @@
----
-layout: post
-title: "marturion 0.2 Release Notes"
-date: 2012-06-24 21:11:19
-categories: release-notes
----
-
-Download: <https://pypi.python.org/packages/source/m/marturion/marturion-0.2.tar.gz>
-
-This release includes the following:
-
-* 0.2
-* Add a new singular random template tag /  / Fixes #2
-* Correct documentation bug. /  / Fixes #1
-* Update version in docs
