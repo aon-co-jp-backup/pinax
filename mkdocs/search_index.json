@@ -1,0 +1,209 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Pinax Documentation\n\n\nWe're just starting to provide overarching documentation for the whole of Pinax to better explain what it is and how to get going with it. While a lot of individual apps have good docs, there's nothing that provides the big picture or help in how the pieces fit together. This documentation is intended to (eventually) serve that purpose.\n\n\nTable of Contents\n\n\n\n\nIntroduction\n\n\nWhat is Pinax?\n\n\nQuick Start\n\n\nHistory\n\n\nFAQs\n\n\n\n\n\n\nStarter Projects\n\n\nStarter Projects\n\n\nStarter Projects\n\n\nApps\n\n\nDevelopment\n\n\nHow to Contribute\n\n\nCode of Conduct\n\n\nCode Conventions\n\n\nRelease Process\n\n\n\n\n\n\nTutorials\n\n\n\n\nColophon\n\n\nThese docs live in the \nhttps://github.com/pinax/pinax\n repo and are generated with MkDocs. Please create issues or pull-requests on that repo if you have any suggestions, corrections or contributions.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#pinax-documentation", 
+            "text": "We're just starting to provide overarching documentation for the whole of Pinax to better explain what it is and how to get going with it. While a lot of individual apps have good docs, there's nothing that provides the big picture or help in how the pieces fit together. This documentation is intended to (eventually) serve that purpose.", 
+            "title": "Pinax Documentation"
+        }, 
+        {
+            "location": "/#table-of-contents", 
+            "text": "Introduction  What is Pinax?  Quick Start  History  FAQs    Starter Projects  Starter Projects  Starter Projects  Apps  Development  How to Contribute  Code of Conduct  Code Conventions  Release Process    Tutorials", 
+            "title": "Table of Contents"
+        }, 
+        {
+            "location": "/#colophon", 
+            "text": "These docs live in the  https://github.com/pinax/pinax  repo and are generated with MkDocs. Please create issues or pull-requests on that repo if you have any suggestions, corrections or contributions.", 
+            "title": "Colophon"
+        }, 
+        {
+            "location": "/what_is_pinax/", 
+            "text": "What is Pinax?\n\n\nPinax is an open source ecosystem of reusable Django apps, themes, and starter project templates.\n\n\nIt takes care of the things that many sites have in common so you can focus on what makes your site different.\n\n\nPinax provides:\n\n\n\n\nStandard project layout\n for consistency and easy deployment\n\n\nStarter projects\n that can be used as the basis for any Django website as well as some tailored to community sites, company sites, intranets and sites in closed beta\n\n\nReusable apps\n providing both back-end functionality and user-facing components\n\n\nDefault templates\n to enable quick prototyping\n\n\n\n\nPinax has been used for everything from social networks to conference websites, and from intranets to online games.\n\n\nBecause it's an entire ecosystem you can't just download Pinax and try it out, but there are starter projects you can do this with (see \nQuick Start\n).\n\n\nA \nstarter project\n is a Django project template that comes with a bunch of apps already integrated with templates, etc.\n\n\nSome starter projects are intended to just lay a foundation for your site. For example the \"account starter project\" or \npinax-project-account\n, gives you user signup (optionally closed), login, password change and reset, basic user preferences all with an easy-to-customize Bootstrap-based UI.\n\n\nHundreds of sites have been built on \npinax-project-account\n even if they otherwise have  nothing else in common or even use any other Pinax apps.\n\n\nSome starter projects are more designed to be demos of how to use a particular reusable app or set of apps.\n\n\nYet other starter projects are designed to be out-of-the-box, fully-functional sites ready to deploy (although we don't have many of these yet).\n\n\nAfter you've started your Django project with a Pinax starter project, it is quite common to add other apps from the Pinax ecosystem. But the apps in Pinax are just regular Django apps. Django apps don't have to be \"Pinax\" apps to be added to a Pinax starter project.\n\n\nFurthermore, you can use the apps in the Pinax ecosystem even if you didn't start with a Pinax starter project.\n\n\nIn short, you can use as little or as much of Pinax as you want. Pinax is opinionated but it's just Django. It's not designed to shield you from Django. With Pinax, you're always just doing regular Django development. You just have a lot of existing code to help you.", 
+            "title": "What is Pinax?"
+        }, 
+        {
+            "location": "/what_is_pinax/#what-is-pinax", 
+            "text": "Pinax is an open source ecosystem of reusable Django apps, themes, and starter project templates.  It takes care of the things that many sites have in common so you can focus on what makes your site different.  Pinax provides:   Standard project layout  for consistency and easy deployment  Starter projects  that can be used as the basis for any Django website as well as some tailored to community sites, company sites, intranets and sites in closed beta  Reusable apps  providing both back-end functionality and user-facing components  Default templates  to enable quick prototyping   Pinax has been used for everything from social networks to conference websites, and from intranets to online games.  Because it's an entire ecosystem you can't just download Pinax and try it out, but there are starter projects you can do this with (see  Quick Start ).  A  starter project  is a Django project template that comes with a bunch of apps already integrated with templates, etc.  Some starter projects are intended to just lay a foundation for your site. For example the \"account starter project\" or  pinax-project-account , gives you user signup (optionally closed), login, password change and reset, basic user preferences all with an easy-to-customize Bootstrap-based UI.  Hundreds of sites have been built on  pinax-project-account  even if they otherwise have  nothing else in common or even use any other Pinax apps.  Some starter projects are more designed to be demos of how to use a particular reusable app or set of apps.  Yet other starter projects are designed to be out-of-the-box, fully-functional sites ready to deploy (although we don't have many of these yet).  After you've started your Django project with a Pinax starter project, it is quite common to add other apps from the Pinax ecosystem. But the apps in Pinax are just regular Django apps. Django apps don't have to be \"Pinax\" apps to be added to a Pinax starter project.  Furthermore, you can use the apps in the Pinax ecosystem even if you didn't start with a Pinax starter project.  In short, you can use as little or as much of Pinax as you want. Pinax is opinionated but it's just Django. It's not designed to shield you from Django. With Pinax, you're always just doing regular Django development. You just have a lot of existing code to help you.", 
+            "title": "What is Pinax?"
+        }, 
+        {
+            "location": "/quick_start/", 
+            "text": "Quick Start\n\n\nWe strongly recommend running Pinax (or indeed, any Django) projects in a virtualenv:\n\n\npip install virtualenv\nvirtualenv mysiteenv\nsource mysiteenv/bin/activate\n\n\n\n\nOnce your virtualenv has been activated, install Django and use \ndjango-admin.py\n to create a new project based on the Pinax starter project \npinax-project-account\n:\n\n\npip install Django==1.7.7\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-project-account/zipball/master mysite\n\n\n\n\nNow install the requirements, initialize your database, load the default sites fixtures and run the dev server:\n\n\ncd mysite\npip install -r requirements.txt\nchmod +x manage.py\n./manage.py migrate\n./manage.py loaddata sites\n./manage.py runserver\n\n\n\n\nYou now have a running Django site complete with account management and bootstrap-based templates.\n\n\n@@@ Then add one more app", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/quick_start/#quick-start", 
+            "text": "We strongly recommend running Pinax (or indeed, any Django) projects in a virtualenv:  pip install virtualenv\nvirtualenv mysiteenv\nsource mysiteenv/bin/activate  Once your virtualenv has been activated, install Django and use  django-admin.py  to create a new project based on the Pinax starter project  pinax-project-account :  pip install Django==1.7.7\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-project-account/zipball/master mysite  Now install the requirements, initialize your database, load the default sites fixtures and run the dev server:  cd mysite\npip install -r requirements.txt\nchmod +x manage.py\n./manage.py migrate\n./manage.py loaddata sites\n./manage.py runserver  You now have a running Django site complete with account management and bootstrap-based templates.  @@@ Then add one more app", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/history/", 
+            "text": "History\n\n\nFrom Origins To DjangoCon 2008\n\n\nThe idea for Pinax was seeded in 2007 when James Tauber was developing a number of websites (including \nQuisition\n and \nHabitualist\n) using Django and realized how much of the code he was writing or intending to write was similar across websites.\n\n\nJames became interested in developing a set of reusable Django apps and developing conventions around what such reusable apps should look like. A group called the \"Hotclub of France\" (or \ndjango-hotclub\n) was formed after PyCon 2007, the name coming from the name of Django Reinhart's band. Not much work (or even discussion) took place the rest of the 2007. There was some discussion and a little bit of sprinting on individual reusable apps at PyCon 2008.\n\n\nIn early May 2008, James suggested to the \ndjango-hotclub\n mailing list the need for a project that could be \"an out-of-the-box Django-based website with everything but the domain-specific functionality\". James also suggested it could be a useful scaffolding for writing and trying out reusable apps. He started what he initially called \"Tabula Rasa\", shortly after renamed to \"Pinax\", a suggestion by Orestis Markou.\n\n\nOn Memorial Day weekend 2008, James decided to spend the weekend hacking on this new Pinax project and was joined by other \"hotclub\" members Brian Rosner, Jannis Leidel and Eric Florenzano. By the end of the weekend, with help from others, Pinax had user profile pages, gravatars, user-to-user messages, announcements, OpenID support, join invitations, a basic Twitter clone with OEmbed support, groups and localizations into German, Spanish and Swedish.\n\n\nBy July, Pinax added wikis, threaded discussions, bookmarks with voting, contact import, blogs with tagging and localization into Brazilian Portuguese and Hebrew.\n\n\n@@@ THE BREAK OUT OF CLOUD27\n\n\n@@@ DJANGOCON 2008\n\n\n@@@ THE 0.7.X ERA\n\n\n@@@ THE 0.9.X ERA\n\n\nSome Historical Blog Posts\n\n\n\n\nReusable Django Apps And Introducing Tabula Rasa\n \nMay 6, 2008\n\n\nIntroducing Pinax\n \nMay 10, 2008\n\n\nPinax Progress\n \nMay 25, 2008\n\n\nPinax Progress II\n \nMay 26, 2008\n\n\nPinax Progress III\n \nJuly 2, 2008\n\n\nPinax Project and Cloud27\n \nJuly 30, 2008\n\n\nDjangoCon, Pinax and Cloud27\n \nSeptember 8, 2008", 
+            "title": "History"
+        }, 
+        {
+            "location": "/history/#history", 
+            "text": "", 
+            "title": "History"
+        }, 
+        {
+            "location": "/history/#from-origins-to-djangocon-2008", 
+            "text": "The idea for Pinax was seeded in 2007 when James Tauber was developing a number of websites (including  Quisition  and  Habitualist ) using Django and realized how much of the code he was writing or intending to write was similar across websites.  James became interested in developing a set of reusable Django apps and developing conventions around what such reusable apps should look like. A group called the \"Hotclub of France\" (or  django-hotclub ) was formed after PyCon 2007, the name coming from the name of Django Reinhart's band. Not much work (or even discussion) took place the rest of the 2007. There was some discussion and a little bit of sprinting on individual reusable apps at PyCon 2008.  In early May 2008, James suggested to the  django-hotclub  mailing list the need for a project that could be \"an out-of-the-box Django-based website with everything but the domain-specific functionality\". James also suggested it could be a useful scaffolding for writing and trying out reusable apps. He started what he initially called \"Tabula Rasa\", shortly after renamed to \"Pinax\", a suggestion by Orestis Markou.  On Memorial Day weekend 2008, James decided to spend the weekend hacking on this new Pinax project and was joined by other \"hotclub\" members Brian Rosner, Jannis Leidel and Eric Florenzano. By the end of the weekend, with help from others, Pinax had user profile pages, gravatars, user-to-user messages, announcements, OpenID support, join invitations, a basic Twitter clone with OEmbed support, groups and localizations into German, Spanish and Swedish.  By July, Pinax added wikis, threaded discussions, bookmarks with voting, contact import, blogs with tagging and localization into Brazilian Portuguese and Hebrew.  @@@ THE BREAK OUT OF CLOUD27  @@@ DJANGOCON 2008  @@@ THE 0.7.X ERA  @@@ THE 0.9.X ERA", 
+            "title": "From Origins To DjangoCon 2008"
+        }, 
+        {
+            "location": "/history/#some-historical-blog-posts", 
+            "text": "Reusable Django Apps And Introducing Tabula Rasa   May 6, 2008  Introducing Pinax   May 10, 2008  Pinax Progress   May 25, 2008  Pinax Progress II   May 26, 2008  Pinax Progress III   July 2, 2008  Pinax Project and Cloud27   July 30, 2008  DjangoCon, Pinax and Cloud27   September 8, 2008", 
+            "title": "Some Historical Blog Posts"
+        }, 
+        {
+            "location": "/faq/", 
+            "text": "Frequently Asked Questions\n\n\n@@@", 
+            "title": "FAQs"
+        }, 
+        {
+            "location": "/faq/#frequently-asked-questions", 
+            "text": "@@@", 
+            "title": "Frequently Asked Questions"
+        }, 
+        {
+            "location": "/pinax_starter_projects/", 
+            "text": "New Approach\n\n\nOne of the things that has become a bit of a maintenance nightmare, especially as we add additional projects is keeping all the repos up to date with when most of the changes apply to all of them (e.g. upgrade Django version).\n\n\nThe pinax/pinax-starter projects repo, which is available \nhere\n, serves as an experiment as a new way of managing this.\n\n\nWe will leverage \ngit\n and branching to manage the hierarchy. The \nmaster\n branch will remain purely for the README and perhaps other ancillary files. Each project template will get a new branch and will branch from its natural parent. The README will be maintained with a full list of the branches and thus the starter projects in the repo. We may at some point add remotes to push each branch to its own repo where the code will live at master, but that will be treated purely as mirrors of this repo.\n\n\nGetting Started\n\n\nAll starter projects share a common method for getting started. It involves creating a \nvirtualenv\n, installing Django, and running the `startproject command with a url to the template, followed by a few commands within your new project.\n\n\npip install virtualenv\nvirtualenv mysiteenv\nsource mysiteenv/bin/activate\npip install Django==1.8.4\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/\nPROJECT_BRANCH\n mysite -n webpack.config.js\ncd mysite\nchmod +x manage.py\npip install -r requirements.txt\n./manage.py migrate\n./manage.py loaddata sites\n./manage.py runserver\n\n\n\n\nDevelopment\n\n\nIf you want to develop your own starter projects here is the workflow you should follow:\n\n\n\n\nStart with the branch you want to base your new project on.\n\n\ngit co -b \nname\n\n\nDo the work on your project template.\n\n\nTest your project template by running \ndjango-admin.py startproject --template=pinax-starter-projects test1 -n webpack.config.js\n\n\nOnce you are satisified with your testing, commit.\n\n\ngit co master\n and then update the \nREADME.md\n file with details about your new project.\n\n\nUpdate all descendent branches:\n\n\n\n\n(\n git co zero \n git merge master --no-edit\n git co account \n git merge zero --no-edit\n git co blog \n git merge zero --no-edit\n git co static \n git merge zero --no-edit\n git co documents \n git merge account --no-edit\n git co wiki \n git merge account --no-edit\n git co team-wiki \n git merge wiki --no-edit\n)\ngit push", 
+            "title": "Pinax Starter Projects"
+        }, 
+        {
+            "location": "/pinax_starter_projects/#new-approach", 
+            "text": "One of the things that has become a bit of a maintenance nightmare, especially as we add additional projects is keeping all the repos up to date with when most of the changes apply to all of them (e.g. upgrade Django version).  The pinax/pinax-starter projects repo, which is available  here , serves as an experiment as a new way of managing this.  We will leverage  git  and branching to manage the hierarchy. The  master  branch will remain purely for the README and perhaps other ancillary files. Each project template will get a new branch and will branch from its natural parent. The README will be maintained with a full list of the branches and thus the starter projects in the repo. We may at some point add remotes to push each branch to its own repo where the code will live at master, but that will be treated purely as mirrors of this repo.", 
+            "title": "New Approach"
+        }, 
+        {
+            "location": "/pinax_starter_projects/#getting-started", 
+            "text": "All starter projects share a common method for getting started. It involves creating a  virtualenv , installing Django, and running the `startproject command with a url to the template, followed by a few commands within your new project.  pip install virtualenv\nvirtualenv mysiteenv\nsource mysiteenv/bin/activate\npip install Django==1.8.4\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/ PROJECT_BRANCH  mysite -n webpack.config.js\ncd mysite\nchmod +x manage.py\npip install -r requirements.txt\n./manage.py migrate\n./manage.py loaddata sites\n./manage.py runserver", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/pinax_starter_projects/#development", 
+            "text": "If you want to develop your own starter projects here is the workflow you should follow:   Start with the branch you want to base your new project on.  git co -b  name  Do the work on your project template.  Test your project template by running  django-admin.py startproject --template=pinax-starter-projects test1 -n webpack.config.js  Once you are satisified with your testing, commit.  git co master  and then update the  README.md  file with details about your new project.  Update all descendent branches:   (\n git co zero   git merge master --no-edit\n git co account   git merge zero --no-edit\n git co blog   git merge zero --no-edit\n git co static   git merge zero --no-edit\n git co documents   git merge account --no-edit\n git co wiki   git merge account --no-edit\n git co team-wiki   git merge wiki --no-edit\n)\ngit push", 
+            "title": "Development"
+        }, 
+        {
+            "location": "/starter_project_list/", 
+            "text": "Each of these will eventually link to a separate page for each starter project with:\n\n\n\n\nDescription\n\n\nWhat starter project it\u2019s built on\n\n\nWhat apps it uses (and perhaps particularly showcases)\n\n\n\n\nList of Starter Projects\n\n\nPinax-Project-Zero\n\n\nThis project lays the foundation for all other Pinax starter projects. It provides the project directory layout and Bootstrap-based theme.\n\n\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/zero mysite -n webpack.config.js\n\n\n\n\nPinax-Project-Account\n\n\nIn addition to what is provided by the \"zero\" project, this project provides thorough integration with django-user-accounts, adding comprehensive account management functionality. It is a foundation suitable for most sites that have user accounts.\n\n\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/account mysite -n webpack.config.js\n\n\n\n\nPinax-Project-Blog\n\n\nThis project gets you off and running with a blog.\n\n\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/blog mysite -n webpack.config.js\n\n\n\n\nPinax-Project-Static\n\n\nThis purpose of this starter project is to provide a robust mocking and design tool.\n\n\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/static mysite -n webpack.config.js\n\n\n\n\nPinax-Project-Documents\n\n\nBuilds on the Accounts starter project to get you off and running with a document library built around \npinax-documents\n.\n\n\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/documents mysite -n webpack.config.js\n\n\n\n\nPinax-Project-Wiki\n\n\nThis project is a demo starter project that provides a wiki for authenticated users.\n\n\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/wiki mysite -n webpack.config.js\n\n\n\n\nPinax-Project-Team-Wiki\n\n\nThis project is a starter project that has account management with profiles and teams and basic collaborative content.\n\n\ndjango-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/team-wiki mysite -n webpack.config.js\n\n\n\n\nAdditional atarter projects:\n\n\n\n\npinax-project-social\n\n\npinax-project-socialauth\n\n\npinax-project-waitinglist\n\n\npinax-project-privatebeta\n\n\npinax-project-symposion\n\n\npinax-project-lms\n\n\npinax-project-forums\n\n\npinax-project-teams\n\n\n\n\nSome starter projects just demo an app or collection of apps. Some provide scaffolding during the development and testing of an app. Some are full-featured, out-of-the-box sites. Some lay the foundation for almost any custom Django site.", 
+            "title": "List of Starter Projects"
+        }, 
+        {
+            "location": "/starter_project_list/#list-of-starter-projects", 
+            "text": "", 
+            "title": "List of Starter Projects"
+        }, 
+        {
+            "location": "/starter_project_list/#pinax-project-zero", 
+            "text": "This project lays the foundation for all other Pinax starter projects. It provides the project directory layout and Bootstrap-based theme.  django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/zero mysite -n webpack.config.js", 
+            "title": "Pinax-Project-Zero"
+        }, 
+        {
+            "location": "/starter_project_list/#pinax-project-account", 
+            "text": "In addition to what is provided by the \"zero\" project, this project provides thorough integration with django-user-accounts, adding comprehensive account management functionality. It is a foundation suitable for most sites that have user accounts.  django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/account mysite -n webpack.config.js", 
+            "title": "Pinax-Project-Account"
+        }, 
+        {
+            "location": "/starter_project_list/#pinax-project-blog", 
+            "text": "This project gets you off and running with a blog.  django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/blog mysite -n webpack.config.js", 
+            "title": "Pinax-Project-Blog"
+        }, 
+        {
+            "location": "/starter_project_list/#pinax-project-static", 
+            "text": "This purpose of this starter project is to provide a robust mocking and design tool.  django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/static mysite -n webpack.config.js", 
+            "title": "Pinax-Project-Static"
+        }, 
+        {
+            "location": "/starter_project_list/#pinax-project-documents", 
+            "text": "Builds on the Accounts starter project to get you off and running with a document library built around  pinax-documents .  django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/documents mysite -n webpack.config.js", 
+            "title": "Pinax-Project-Documents"
+        }, 
+        {
+            "location": "/starter_project_list/#pinax-project-wiki", 
+            "text": "This project is a demo starter project that provides a wiki for authenticated users.  django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/wiki mysite -n webpack.config.js", 
+            "title": "Pinax-Project-Wiki"
+        }, 
+        {
+            "location": "/starter_project_list/#pinax-project-team-wiki", 
+            "text": "This project is a starter project that has account management with profiles and teams and basic collaborative content.  django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/team-wiki mysite -n webpack.config.js  Additional atarter projects:   pinax-project-social  pinax-project-socialauth  pinax-project-waitinglist  pinax-project-privatebeta  pinax-project-symposion  pinax-project-lms  pinax-project-forums  pinax-project-teams   Some starter projects just demo an app or collection of apps. Some provide scaffolding during the development and testing of an app. Some are full-featured, out-of-the-box sites. Some lay the foundation for almost any custom Django site.", 
+            "title": "Pinax-Project-Team-Wiki"
+        }, 
+        {
+            "location": "/moving_to_webpack/", 
+            "text": "A Move to webpack and Away from Vendoring\n\n\nFor a while now, we\u2019ve been maintaining a theme we use in all our projects based on Bootstrap, Font Awesome, and jQuery. Up until today, we have just vendored the static assets and included them by leveraging Django staticfiles finders.\n\n\nThe \npinax-theme-bootstrap\n until now has been doing too many things. In addition, to providing templates, it was bundling specific versions of \njQuery\n, \nFont Awesome\n, and \nBootstrap (style and javascript)\n. Anytime there was a point release of any one of the three, it would require a new release of the entire theme despite over time there being very little need to change the templates.\n\n\nWhat this meant in practice is that the libraries would get out of date and semantic versioning was hard at best, if not meaningless.\n\n\nWe have long adopted the view and practice that Python requirements should live in \nrequirements.txt\n (or a \nsetup.py\n\u2018s \ninstall_requires\n). Why should our frontend libraries by any different?\n\n\nStarting with \nversion 6.0.0\n, the theme ships with templates and it\u2019s own small javascript file. It is documented what versions the templates are tested with but nothing restricts you from using different versions at the project level.\n\n\nWe have provided a reference implementation of using \nnpm\n and \nwebpack\n in our most popular starter project, the \npinax-project-account\n project. To build the \npackage.json\n (\nnpm\n\u2018s version of \nrequirements.txt\n) we simply:\n\n\nnpm init  # taking all defaults\nnpm install bootstrap font-awesome jquery --save  # the core libraries we need\nnpm install webpack  --save # the builder\nnpm install extract-text-webpack-plugin --save  # plugin to break apart files\nnpm install css-loader style-loader file-loader less-loader babel-loader --save\n\n\n\n\nSubsequent developers (or if you are using this starter project), can simply issue:\n\n\nnpm install\n\n\n\n\nand it will install everything in the \npackage.json\n to a local \nnode_modules/\n directory that \nwebpack\n can then use to build static files.\n\n\nAnother thing we did in the starter project was to provide a working \nwebpack.config.js\n which provides not only a build script but also the ability to run a watcher so static assets are built as you edit them.\n\n\nTo signal the static files taking on it\u2019s own parallel process to manage dependencies and requirements, we moved the \nstatic\n folder to the top level rather than inside the project package. In addition, we segment to subfolders, \nsrc/\n and \ndist/\n to help developers understand that you only edit the files in \nsrc/\n. Only the files winding up in \ndist/\n are served due to the changes in \nsettings.STATICFILES_DIRS\n.\n\n\nThe starter project comes with assets prebuilt and ready to go. If you make changes to any any assets you simply need to run:\n\n\nnpm install\nnpm run build\n\n\n\n\nIf you want to have your assets automatically rebuild whenver you save changes, you can run:\n\n\nnpm run watch\n\n\n\n\nIf you need to add some other library, a datepicker for instance, you simply need to run the \nnpm install \npackage\n --save\n command, hook it up in your \nstatic/src/js/main.js\n (or elsewhere in your modules), and run \nnpm run build\n if you were not already running \nnpm run watch\n.", 
+            "title": "Moving to webpack"
+        }, 
+        {
+            "location": "/moving_to_webpack/#a-move-to-webpack-and-away-from-vendoring", 
+            "text": "For a while now, we\u2019ve been maintaining a theme we use in all our projects based on Bootstrap, Font Awesome, and jQuery. Up until today, we have just vendored the static assets and included them by leveraging Django staticfiles finders.  The  pinax-theme-bootstrap  until now has been doing too many things. In addition, to providing templates, it was bundling specific versions of  jQuery ,  Font Awesome , and  Bootstrap (style and javascript) . Anytime there was a point release of any one of the three, it would require a new release of the entire theme despite over time there being very little need to change the templates.  What this meant in practice is that the libraries would get out of date and semantic versioning was hard at best, if not meaningless.  We have long adopted the view and practice that Python requirements should live in  requirements.txt  (or a  setup.py \u2018s  install_requires ). Why should our frontend libraries by any different?  Starting with  version 6.0.0 , the theme ships with templates and it\u2019s own small javascript file. It is documented what versions the templates are tested with but nothing restricts you from using different versions at the project level.  We have provided a reference implementation of using  npm  and  webpack  in our most popular starter project, the  pinax-project-account  project. To build the  package.json  ( npm \u2018s version of  requirements.txt ) we simply:  npm init  # taking all defaults\nnpm install bootstrap font-awesome jquery --save  # the core libraries we need\nnpm install webpack  --save # the builder\nnpm install extract-text-webpack-plugin --save  # plugin to break apart files\nnpm install css-loader style-loader file-loader less-loader babel-loader --save  Subsequent developers (or if you are using this starter project), can simply issue:  npm install  and it will install everything in the  package.json  to a local  node_modules/  directory that  webpack  can then use to build static files.  Another thing we did in the starter project was to provide a working  webpack.config.js  which provides not only a build script but also the ability to run a watcher so static assets are built as you edit them.  To signal the static files taking on it\u2019s own parallel process to manage dependencies and requirements, we moved the  static  folder to the top level rather than inside the project package. In addition, we segment to subfolders,  src/  and  dist/  to help developers understand that you only edit the files in  src/ . Only the files winding up in  dist/  are served due to the changes in  settings.STATICFILES_DIRS .  The starter project comes with assets prebuilt and ready to go. If you make changes to any any assets you simply need to run:  npm install\nnpm run build  If you want to have your assets automatically rebuild whenver you save changes, you can run:  npm run watch  If you need to add some other library, a datepicker for instance, you simply need to run the  npm install  package  --save  command, hook it up in your  static/src/js/main.js  (or elsewhere in your modules), and run  npm run build  if you were not already running  npm run watch .", 
+            "title": "A Move to webpack and Away from Vendoring"
+        }, 
+        {
+            "location": "/apps_list/", 
+            "text": "Each of these will eventually link to a separate page for each app with:\n\n\n\n\nDescription\n\n\nMaturity rating\n\n\nWhat starter projects use it\n\n\nWhat starter projects particularly showcase it\n\n\nHow to add it to a project\n\n\n\n\nList of Apps\n\n\nApps that need to be assessed and triaged:\n\n\n\n\ndjango-user-accounts\n\n\ndjango-mailer\n\n\ndjango-waitinglist\n\n\npinax-points\n\n\npinax-referrals\n\n\npinax-ratings\n\n\npinax-testimonials\n\n\npinax-blog\n\n\npinax-teams\n\n\ndjango-stripe-payments\n\n\ndjango-announcements\n\n\npinax-notifications\n\n\npinax-lms-activities\n\n\npinax-forums\n\n\npinax-types\n\n\ndjango-email-confirmation (deprecated)\n\n\nsymposion\n\n\nmetron\n\n\nphileo (soon to be pinax-likes)\n\n\ndjango-forms-bootstrap (deprecated?)\n\n\npinax-phone-confirmation\n\n\ndjango-bookmarks\n\n\ndjango-friends\n\n\ndjango-flag\n\n\npinax-wiki\n\n\n\n\nApps often follow the following template:\n\n\n\n\npinax-starter-app", 
+            "title": "List of Apps"
+        }, 
+        {
+            "location": "/apps_list/#list-of-apps", 
+            "text": "Apps that need to be assessed and triaged:   django-user-accounts  django-mailer  django-waitinglist  pinax-points  pinax-referrals  pinax-ratings  pinax-testimonials  pinax-blog  pinax-teams  django-stripe-payments  django-announcements  pinax-notifications  pinax-lms-activities  pinax-forums  pinax-types  django-email-confirmation (deprecated)  symposion  metron  phileo (soon to be pinax-likes)  django-forms-bootstrap (deprecated?)  pinax-phone-confirmation  django-bookmarks  django-friends  django-flag  pinax-wiki   Apps often follow the following template:   pinax-starter-app", 
+            "title": "List of Apps"
+        }, 
+        {
+            "location": "/how_to_contribute/", 
+            "text": "How To Contribute\n\n\n@@@ Changes to projects or apps\n\n\n@@@ New starter projects\n\n\n@@@ New apps\n\n\n@@@ Suggested things to contribute", 
+            "title": "How to Contribute"
+        }, 
+        {
+            "location": "/how_to_contribute/#how-to-contribute", 
+            "text": "@@@ Changes to projects or apps  @@@ New starter projects  @@@ New apps  @@@ Suggested things to contribute", 
+            "title": "How To Contribute"
+        }, 
+        {
+            "location": "/code_of_conduct/", 
+            "text": "Contributor Code of Conduct\n\n\nAs contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.\n\n\nWe are committed to making participation in this project a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, religion, or nationality.\n\n\nExamples of unacceptable behavior by participants include:\n\n\n\n\nThe use of sexualized language or imagery\n\n\nPersonal attacks\n\n\nTrolling or insulting/derogatory comments\n\n\nPublic or private harassment\n\n\nPublishing other's private information, such as physical or electronic addresses, without explicit permission\n\n\nOther unethical or unprofessional conduct.\n\n\n\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct. By adopting this Code of Conduct, project maintainers commit themselves to fairly and consistently applying these principles to every aspect of managing this project. Project maintainers who do not follow or enforce the Code of Conduct may be permanently removed from the project team.\n\n\nThis code of conduct applies both within project spaces and in public spaces when an individual is representing the project or its community.\n\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by opening an issue or contacting one or more of the project maintainers.\n\n\nThis Code of Conduct is adapted from the Contributor Covenant, version 1.2.0, available from \nhttp://contributor-covenant.org/version/1/2/0/", 
+            "title": "Code of Conduct"
+        }, 
+        {
+            "location": "/code_of_conduct/#contributor-code-of-conduct", 
+            "text": "As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.  We are committed to making participation in this project a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, religion, or nationality.  Examples of unacceptable behavior by participants include:   The use of sexualized language or imagery  Personal attacks  Trolling or insulting/derogatory comments  Public or private harassment  Publishing other's private information, such as physical or electronic addresses, without explicit permission  Other unethical or unprofessional conduct.   Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct. By adopting this Code of Conduct, project maintainers commit themselves to fairly and consistently applying these principles to every aspect of managing this project. Project maintainers who do not follow or enforce the Code of Conduct may be permanently removed from the project team.  This code of conduct applies both within project spaces and in public spaces when an individual is representing the project or its community.  Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by opening an issue or contacting one or more of the project maintainers.  This Code of Conduct is adapted from the Contributor Covenant, version 1.2.0, available from  http://contributor-covenant.org/version/1/2/0/", 
+            "title": "Contributor Code of Conduct"
+        }, 
+        {
+            "location": "/code_conventions/", 
+            "text": "Code Conventions\n\n\n@@@ For now see \nCONTRIBUTING.md", 
+            "title": "Code Conventions"
+        }, 
+        {
+            "location": "/code_conventions/#code-conventions", 
+            "text": "@@@ For now see  CONTRIBUTING.md", 
+            "title": "Code Conventions"
+        }, 
+        {
+            "location": "/release_process/", 
+            "text": "Release Process\n\n\n@@@ How packages are released, etc", 
+            "title": "Release Process"
+        }, 
+        {
+            "location": "/release_process/#release-process", 
+            "text": "@@@ How packages are released, etc", 
+            "title": "Release Process"
+        }, 
+        {
+            "location": "/tutorials/", 
+            "text": "Tutorials\n\n\n@@@ Site projects: a series of apps put together to build a site", 
+            "title": "Tutorials"
+        }, 
+        {
+            "location": "/tutorials/#tutorials", 
+            "text": "@@@ Site projects: a series of apps put together to build a site", 
+            "title": "Tutorials"
+        }
+    ]
+}
