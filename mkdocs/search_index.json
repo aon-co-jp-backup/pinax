@@ -62,12 +62,12 @@
         }, 
         {
             "location": "/faq/", 
-            "text": "Frequently Asked Questions\n\n\n@@@", 
+            "text": "Frequently Asked Questions\n\n\n@@@\n\n\nIf you have any questions, would like to tell us about cool projects you built with Pinax, would like to help us make design decisions, or talk about any Pinax related ideas, etc. please join our \nPinax Slack channel\n. Everyone is welcome!", 
             "title": "FAQs"
         }, 
         {
             "location": "/faq/#frequently-asked-questions", 
-            "text": "@@@", 
+            "text": "@@@  If you have any questions, would like to tell us about cool projects you built with Pinax, would like to help us make design decisions, or talk about any Pinax related ideas, etc. please join our  Pinax Slack channel . Everyone is welcome!", 
             "title": "Frequently Asked Questions"
         }, 
         {
