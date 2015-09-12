@@ -105,8 +105,13 @@
             
                 <li class="toctree-l3"><a href="#getting-started">Getting Started</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#development">Development</a></li>
+                    <li><a class="toctree-l4" href="#create-a-virtualenv">Create a virtualenv</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-django-and-start-project">Install Django and Start Project</a></li>
+                
+                    <li><a class="toctree-l4" href="#projects">Projects</a></li>
+                
+                    <li><a class="toctree-l4" href="#development">Development</a></li>
                 
             
             </ul>
@@ -278,14 +283,38 @@
             <div class="section">
               
                 <h1 id="getting-started">Getting Started</h1>
-<p>The pinax/pinax-starter projects repo is available <a href="https://github.com/pinax/pinax-starter-projects/blob/master/README.md">here</a>.</p>
+<p>The pinax/pinax-starter projects repo is available <a href="https://github.com/pinax/pinax-starter-projects/">here</a>.</p>
 <p>All starter projects share a common method for getting started. It involves creating a virtual environment, installing Django, and running the <code>startproject</code> command with a URL to the template, followed by a few commands within your new project.</p>
+<p>Many of the starter projects are derivatives of each
+other (<a href="http://github.com/pinax/pinax-starter-projects-zero">pinax-starter-projects-zero</a> is a
+parent of <a href="http://github.com/pinax/pinax-starter-projects-project">pinax-starter-projects-project</a>
+among many others).</p>
+<p>We leverage <code>git</code> and branching to manage the hierarchy.</p>
+<p>Each project template will get a new branch and will branch from it's natural
+parent.</p>
+<p>All starter projects share a common method for getting started. It involves
+created a virtualenv, installing Django, and running the <code>startproject</code> command
+with a url to the template, followed by a few commands within your new project.</p>
+<h3 id="create-a-virtualenv">Create a virtualenv</h3>
+<p>You might use <code>pyenv</code> instead.</p>
 <pre><code>pip install virtualenv
 virtualenv mysiteenv
 source mysiteenv/bin/activate
-pip install Django==1.8.4
-django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/&lt;PROJECT_BRANCH&gt; mysite -n webpack.config.js
-cd mysite
+</code></pre>
+
+<h3 id="install-django-and-start-project">Install Django and Start Project</h3>
+<h4 id="manually">Manually</h4>
+<pre><code>pip install Django==1.8.4
+django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/&lt;PROJECT_BRANCH&gt; mysite -n webpack.config.js -n PROJECT_README.md
+</code></pre>
+
+<h4 id="using-the-pinax-client">Using the <code>pinax</code> client</h4>
+<pre><code>pip install pinax
+pinax projects --start=&lt;KIND&gt; mysite
+</code></pre>
+
+<h4 id="get-going-with-your-new-project">Get going with your new project</h4>
+<pre><code>cd mysite
 chmod +x manage.py
 pip install -r requirements.txt
 ./manage.py migrate
@@ -293,26 +322,40 @@ pip install -r requirements.txt
 ./manage.py runserver
 </code></pre>
 
-<h1 id="development">Development</h1>
-<p>If you want to develop your own starter projects, here is the workflow you should follow:</p>
+<p>See each section below for the startproject url as well as any deviation from
+these common notes.</p>
+<h2 id="projects">Projects</h2>
+<ul>
+<li><a href="../starter_project_list/#pinax-project-zero">zero</a></li>
+<li><a href="../starter_project_list/#pinax-project-account">account</a><ul>
+<li><a href="../starter_project_list/#pinax-project-documents">documents</a></li>
+<li><a href="../starter_project_list/#pinax-project-wiki">wiki</a></li>
+<li><a href="../starter_project_list/#pinax-project-team-wiki">team-wiki</a></li>
+</ul>
+</li>
+<li><a href="../starter_project_list/#pinax-project-blog">blog</a></li>
+<li><a href="../starter_project_list/#pinax-project-static">static</a></li>
+<li><a href="../starter_project_list/#pinax-project-waiting-list">waiting-list</a></li>
+<li><code>social</code></li>
+<li><code>social-auth</code></li>
+<li><code>lms</code></li>
+<li><code>forums</code></li>
+<li><code>private-beta</code></li>
+<li><code>symposion</code></li>
+</ul>
+<h2 id="development">Development</h2>
+<p>If you want to develop your own starter projects here is the workflow you should
+follow:</p>
 <ol>
 <li>Start with the branch you want to base your new project on.</li>
-<li><code>git checkout -b &lt;name&gt;</code></li>
-<li>Work on your project template.</li>
-<li>Test your project template by running <code>django-admin.py startproject --template=pinax-starter-projects test1 -n webpack.config.js</code></li>
+<li><code>git co -b &lt;name&gt;</code></li>
+<li>Do the work on your project template</li>
+<li>Test your project template by running <code>django-admin.py startproject --template=pinax-starter-projects test1 -n webpack.config.js -n PROJECT_README.md</code></li>
 <li>Once you are satisified with your testing, commit.</li>
-<li><code>git checkout master</code> and then update the <code>README.md</code> file with details about your new project.</li>
+<li><code>git co master</code> and then update this <code>README.md</code> file with details about your new project</li>
 <li>Update all descendent branches:</li>
 </ol>
-<pre><code>(
- git checkout zero &amp;&amp; git merge master --no-edit
- git checkout account &amp;&amp; git merge zero --no-edit
- git checkout blog &amp;&amp; git merge zero --no-edit
- git checkout static &amp;&amp; git merge zero --no-edit
- git checkout documents &amp;&amp; git merge account --no-edit
- git checkout wiki &amp;&amp; git merge account --no-edit
- git checkout team-wiki &amp;&amp; git merge wiki --no-edit
-)
+<pre><code>./update.sh
 git push
 </code></pre>
               
