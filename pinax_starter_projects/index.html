@@ -290,10 +290,10 @@ other (<a href="http://github.com/pinax/pinax-starter-projects-zero">pinax-start
 parent of <a href="http://github.com/pinax/pinax-starter-projects-project">pinax-starter-projects-project</a>
 among many others).</p>
 <p>We leverage <code>git</code> and branching to manage the hierarchy.</p>
-<p>Each project template will get a new branch and will branch from it's natural
+<p>Each project template will get a new branch and will branch from its natural
 parent.</p>
 <p>All starter projects share a common method for getting started. It involves
-created a virtualenv, installing Django, and running the <code>startproject</code> command
+creating a virtualenv, installing Django, and running the <code>startproject</code> command
 with a url to the template, followed by a few commands within your new project.</p>
 <h3 id="create-a-virtualenv">Create a virtualenv</h3>
 <p>You might use <code>pyenv</code> instead.</p>
@@ -308,12 +308,12 @@ source mysiteenv/bin/activate
 django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/&lt;PROJECT_BRANCH&gt; mysite -n webpack.config.js -n PROJECT_README.md
 </code></pre>
 
-<h4 id="using-the-pinax-client">Using the <code>pinax</code> client</h4>
+<h4 id="using-the-pinax-client">Using the <code>pinax</code> Client</h4>
 <pre><code>pip install pinax
 pinax projects --start=&lt;KIND&gt; mysite
 </code></pre>
 
-<h4 id="get-going-with-your-new-project">Get going with your new project</h4>
+<h4 id="get-going-with-your-new-project">Get Going With Your New Project</h4>
 <pre><code>cd mysite
 chmod +x manage.py
 pip install -r requirements.txt
