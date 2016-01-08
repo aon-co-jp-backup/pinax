@@ -192,11 +192,19 @@
             
                 <li class="toctree-l3"><a href="#how-to-contribute">How to Contribute</a></li>
                 
+                    <li><a class="toctree-l4" href="#watch-the-videos">Watch the Videos</a></li>
+                
+                    <li><a class="toctree-l4" href="#questionshelp">Questions/Help</a></li>
+                
+                    <li><a class="toctree-l4" href="#reporting-bugs-requesting-features-making-pull-requests">Reporting Bugs/ Requesting Features/ Making Pull Requests</a></li>
+                
                     <li><a class="toctree-l4" href="#committing-code">Committing Code</a></li>
                 
                     <li><a class="toctree-l4" href="#coding-style">Coding style</a></li>
                 
                     <li><a class="toctree-l4" href="#pull-requests">Pull Requests</a></li>
+                
+                    <li><a class="toctree-l4" href="#other-ways-to-contributewhat-we-need-help-with">Other Ways to Contribute/What We Need Help With</a></li>
                 
             
             </ul>
@@ -301,6 +309,14 @@ themes, and starter projects that it is made up of. Contributing code, writing
 documentation, reporting bugs, as well as reading and providing feedback on
 issues and pull requests, all are valid and necessary ways to
 help.</p>
+<h2 id="watch-the-videos">Watch the Videos</h2>
+<p>Each month we do a Pinax Hangout, where we talk about a Pinax app or starter project, and demo how it works. Watching the videos of our <a href="https://www.youtube.com/channel/UCAPpNG85GLzUBwzYCjd4raQ">previous Pinax Hangouts</a> might be helpful to you and might make contributing to Pinax easier. Click on the Youtube description of each video and you will find an agenda of what was discussed during a particular Hangout.</p>
+<h2 id="questionshelp">Questions/Help</h2>
+<p>When you have questions or need help it’s best to join our <a href="http://slack.pinaxproject.com">Pinax project Slack channel</a> and ping us there. It is also valid to create an issue and add the <code>question</code> label to it but it will usually take us longer to answer a question that has been filed as an issue than to help you in Slack.</p>
+<p>If you provide us with an example of a bug you ran into, something that isn’t working, something you don’t understand, we will be able to help you much faster. It is totally sufficient to take a screenshot and post it in Slack or add it to your GitHub issue.</p>
+<h2 id="reporting-bugs-requesting-features-making-pull-requests">Reporting Bugs/ Requesting Features/ Making Pull Requests</h2>
+<p>If you’re not sure how to create an issue or make a pull request on GitHub, please read <a href="http://blog.pinaxproject.com/2015/11/10/guide-how-contribute-pinax/">this blog post</a> for help. If things are still unclear or you run into any problems, please don’t hesitate to ping us in Slack.</p>
+<p>When you create an issue, please make sure to assign the correct labels to it. See <a href="">this blog post</a> for help.</p>
 <h2 id="committing-code">Committing Code</h2>
 <p>The great thing about using a distributed versioning control system like git
 is that everyone becomes a committer. When other people write good patches
@@ -419,6 +435,7 @@ class TaskComment(models.Model):
     pass
 </code></pre>
 <h2 id="pull-requests">Pull Requests</h2>
+<p>If you would like to add functionality or add a new feature, please submit an issue first to make sure it’s a direction we want to take.</p>
 <p>Please keep your pull requests focused on one specific thing only. If you
 have a number of contributions to make, then please send separate pull
 requests. It is much easier on maintainers to receive small, well defined,
@@ -438,6 +455,29 @@ one entirely.) Save and exit will complete the rebase. Use a forced push to
 your fork.</p>
 <pre><code>git push -f
 </code></pre>
+<p>When you create a pull requests, which fixes an issue, please link the original issue in your pull request.</p>
+<h2 id="other-ways-to-contributewhat-we-need-help-with">Other Ways to Contribute/What We Need Help With</h2>
+<h3 id="help-others">Help Others!</h3>
+<p>If you would like to help others who are just starting to contribute to Pinax, you can do the following:</p>
+<ul>
+<li>Hang out in <a href="http://slack.pinaxproject.com">Slack</a> and help answer questions!</li>
+<li>Watch the <a href="https://github.com/pinax">Pinax repositories</a> for issues or pull request you could help with!</li>
+<li>When you encounter a bug/have an idea for a feature/encounter missing documentation that could easily be fixed, create <code>first-timers-only</code> issues like <a href="https://github.com/pinax/pinax/issues/102">this one</a> for people wanting to make their first OSS contribution! If you need help creating this sort of issue, please ping @ossanna16 on GitHub or @anna in Slack.</li>
+</ul>
+<h3 id="contribute-to-the-community">Contribute To The Community!</h3>
+<ul>
+<li>Write blog posts <a href="http://blog.pinaxproject.com/section/how-tos/">like these</a>!</li>
+<li>Host a <a href="https://www.youtube.com/channel/UCAPpNG85GLzUBwzYCjd4raQ">Pinax Hangout</a>!</li>
+<li>Help us contribute to our existing documentation and write new documentation! You can find links to each app’s/starter project’s documentation in the README of the app/starter project.</li>
+<li>Write tutorials! If there’s an app or starter project you know well, write a tutorial and show others how to use it, what features it has, etc.</li>
+</ul>
+<h3 id="contribute-code">Contribute Code!</h3>
+<ul>
+<li>Write tests!</li>
+<li>If you have time to fix any of our GitHub issues (especially those labelled <code>up-for-grabs</code>) we would greatly appreciate your help!</li>
+<li>Create a new starter project which showcases how to use any of our Pinax apps (or a combination of them). This doesn’t have to be anything new or original. You could for example pick an existing website like Facebook and try to rebuild it with Pinax components.</li>
+<li>Write new Pinax apps! If while building your starter project you notice that an app is missing we would love for you to let us know about your idea or build the app yourself.</li>
+</ul>
               
             </div>
           </div>
