@@ -105,9 +105,7 @@
             
                 <li class="toctree-l3"><a href="#getting-started">Getting Started</a></li>
                 
-                    <li><a class="toctree-l4" href="#create-a-virtualenv">Create a virtualenv</a></li>
-                
-                    <li><a class="toctree-l4" href="#install-django-and-start-project">Install Django and Start Project</a></li>
+                    <li><a class="toctree-l4" href="#getting-started_1">Getting Started</a></li>
                 
                     <li><a class="toctree-l4" href="#projects">Projects</a></li>
                 
@@ -298,37 +296,36 @@
             <div class="section">
               
                 <h1 id="getting-started">Getting Started</h1>
-<p>The pinax/pinax-starter projects repo is available <a href="https://github.com/pinax/pinax-starter-projects/">here</a>.</p>
-<p>All starter projects share a common method for getting started. It involves creating a virtual environment, installing Django, and running the <code>startproject</code> command with a URL to the template, followed by a few commands within your new project.</p>
-<p>Many of the starter projects are derivatives of each
-other (<a href="http://github.com/pinax/pinax-starter-projects-zero">pinax-starter-projects-zero</a> is a
-parent of <a href="http://github.com/pinax/pinax-starter-projects-project">pinax-starter-projects-project</a>
-among many others).</p>
-<p>We leverage <code>git</code> and branching to manage the hierarchy.</p>
-<p>Each project template will get a new branch and will branch from its natural
-parent.</p>
-<p>All starter projects share a common method for getting started. It involves
-creating a virtualenv, installing Django, and running the <code>startproject</code> command
-with a url to the template, followed by a few commands within your new project.</p>
-<h3 id="create-a-virtualenv">Create a virtualenv</h3>
+<p>The <code>pinax/pinax-starter-projects</code> repo is available <a href="https://github.com/pinax/pinax-starter-projects/">here</a>.</p>
+<p>Many of the starter projects are derivatives of each other <code>zero</code> is the parent of <code>account</code> among many
+others). We leverage <code>git</code> and branching to manage the hierarchy. Each project template lives in it's
+own branch and will branch from its natural parent.</p>
+<p>All starter projects share a common method for getting started. It involves creating a virtual environment, installing Django, and running the <code>startproject</code> command with a URL to the template, followed by a few commands within your new project. Or even easier, you can use the <code>pinax</code>
+command line utility.</p>
+<h2 id="getting-started_1">Getting Started</h2>
 <p>You might use <code>pyenv</code> instead.</p>
 <pre><code>pip install virtualenv
 virtualenv mysiteenv
 source mysiteenv/bin/activate
 </code></pre>
 
-<h3 id="install-django-and-start-project">Install Django and Start Project</h3>
-<h4 id="manually">Manually</h4>
-<pre><code>pip install Django==1.8.4
+<h3 id="using-the-pinax-command-line-utility">Using the <code>pinax</code> command line utility</h3>
+<pre><code>pip install pinax-cli
+pinax projects  # list available project releases
+pinax start &lt;kind&gt; &lt;project_name&gt;
+</code></pre>
+
+<p>If you are feeling adventurous you can install off latest development by passing
+the <code>--dev</code> flag:</p>
+<pre><code>pinax start --dev &lt;kind&gt; &lt;project_name&gt;
+</code></pre>
+
+<h3 id="manually">Manually</h3>
+<pre><code>pip install Django
 django-admin.py startproject --template=https://github.com/pinax/pinax-starter-projects/zipball/&lt;PROJECT_BRANCH&gt; mysite -n webpack.config.js -n PROJECT_README.md
 </code></pre>
 
-<h4 id="using-the-pinax-client">Using the <code>pinax</code> Client</h4>
-<pre><code>pip install pinax-cli
-pinax projects --start=&lt;KIND&gt; mysite
-</code></pre>
-
-<h4 id="get-going-with-your-new-project">Get Going With Your New Project</h4>
+<h3 id="get-going-with-your-new-project">Get Going With Your New Project</h3>
 <pre><code>cd mysite
 chmod +x manage.py
 pip install -r requirements.txt
@@ -344,6 +341,7 @@ these common notes.</p>
 <li><a href="../starter_project_list/#pinax-project-zero">zero</a></li>
 <li><a href="../starter_project_list/#pinax-project-account">account</a><ul>
 <li><a href="../starter_project_list/#pinax-project-documents">documents</a></li>
+<li><a href="../starter_project_list/#pinax-project-social-auth">social-auth</a></li>
 <li><a href="../starter_project_list/#pinax-project-wiki">wiki</a></li>
 <li><a href="../starter_project_list/#pinax-project-team-wiki">team-wiki</a></li>
 </ul>
@@ -352,7 +350,6 @@ these common notes.</p>
 <li><a href="../starter_project_list/#pinax-project-static">static</a></li>
 <li><a href="../starter_project_list/#pinax-project-waiting-list">waiting-list</a></li>
 <li><code>social</code></li>
-<li><code>social-auth</code></li>
 <li><code>lms</code></li>
 <li><code>forums</code></li>
 <li><code>private-beta</code></li>
