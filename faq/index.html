@@ -96,6 +96,8 @@
                 
                     <li><a class="toctree-l4" href="#i-already-have-an-existing-django-project-can-i-still-use-pinax">I already have an existing Django project. Can I still use Pinax?</a></li>
                 
+                    <li><a class="toctree-l4" href="#how-do-we-upgrade-a-site-to-a-newer-pinax-release">How do we upgrade a site to a newer Pinax release?</a></li>
+                
             
             </ul>
         
@@ -303,6 +305,9 @@
 <p>You can now start adding your own apps or existing Django apps (whether from Pinax or anywhere else).</p>
 <h2 id="i-already-have-an-existing-django-project-can-i-still-use-pinax">I already have an existing Django project. Can I still use Pinax?</h2>
 <p>A large component of Pinax is just re-usable Django apps. Most make very few assumptions about what else is in your project (although some assume you're using django-user-accounts for user account management). In most cases you can just use an app in the Pinax ecosystem like you would any other Django app.</p>
+<h2 id="how-do-we-upgrade-a-site-to-a-newer-pinax-release">How do we upgrade a site to a newer Pinax release?</h2>
+<p>Individual apps generally follow <a href="http://semver.org/">semantic versioning</a> and often have an upgrade path.  So they should be upgradable.</p>
+<p>If you want to use a starter project, or other collection of Pinax apps, and be able to follow a documented upgrade path, something like <a href="https://github.com/pinax/pinax/issues/84">Proposal for Pinax Distribution Versioning - pinax issue #84</a> is needed.  It would provide coordinated releases, and make Pinax even more like a Linux distribution, in the way that e.g. Ubuntu creates a coordinated release of an infrastructure along with a variety of applications.</p>
               
             </div>
           </div>

@@ -312,7 +312,30 @@ chmod +x manage.py
 </code></pre>
 
 <p>You now have a running Django site complete with account management and bootstrap-based templates.</p>
-<p>TODO: Then add one more app</p>
+<p>To add one more app you will first have to modify the <code>requirements.txt</code> file by adding the new app:</p>
+<pre><code>myapp
+</code></pre>
+<p>Make sure to install the requirements once again.</p>
+<pre><code>pip install -r requirements.txt
+</code></pre>
+
+<p>Next, you will modify the <code>settings.py</code>, by adding your app to the <code>INSTALLED_APPS</code>:</p>
+<pre><code>INSTALLED_APPS = [
+    ...
+    &quot;myapp&quot;
+]
+</code></pre>
+
+<p>This will also be a good time to make any additional changes to <code>settings.py</code> if needed for the new app.</p>
+<p>Be sure to migrate the new app:</p>
+<pre><code>./manage.py migrate
+</code></pre>
+
+<p>Next, you will modify the <code>urls.py</code> to contain a new url for the new app:</p>
+<pre><code>url(r&quot;^myapp/&quot;, include(&quot;myapp.url&quot;)),
+</code></pre>
+
+<p>This will be a good time to make any adjustments to any templates if needed for the new app.</p>
               
             </div>
           </div>

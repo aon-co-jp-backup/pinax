@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Moving to webpack - Pinax Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Moving to webpack";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Pinax Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Introduction</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../what_is_pinax/">What is Pinax?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../quick_start/">Quick Start</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../history/">History</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../faq/">FAQs</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Starter Projects</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../pinax_starter_projects/">Pinax Starter Projects</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../starter_project_list/">List of Starter Projects</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Moving to webpack</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#a-move-to-webpack-and-away-from-vendoring">A Move to webpack and Away from Vendoring</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Apps</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../apps_list/">List of Apps</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Development</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../how_to_contribute/">How to Contribute</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../code_of_conduct/">Code of Conduct</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../code_conventions/">Code Conventions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../release_process/">Release Process</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tutorials</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tutorials/">Tutorials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Pinax Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Starter Projects &raquo;</li>
+        
+      
+    
+    <li>Moving to webpack</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="a-move-to-webpack-and-away-from-vendoring">A Move to webpack and Away from Vendoring</h1>
+<p>For a while now, we’ve been maintaining a theme we use in all our projects based on Bootstrap, Font Awesome, and jQuery. Up until today, we have just vendored the static assets and included them by leveraging Django staticfiles finders.</p>
+<p>The <a href="https://github.com/pinax/pinax-theme-bootstrap">pinax-theme-bootstrap</a> until now has been doing too many things. In addition, to providing templates, it was bundling specific versions of <a href="http://jquery.com">jQuery</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="http://getbootstrap.com">Bootstrap (style and javascript)</a>. Anytime there was a point release of any one of the three, it would require a new release of the entire theme despite over time there being very little need to change the templates.</p>
+<p>What this meant in practice is that the libraries would get out of date and semantic versioning was hard at best, if not meaningless.</p>
+<p>We have long adopted the view and practice that Python requirements should live in <code>requirements.txt</code> (or a <code>setup.py</code>‘s <code>install_requires</code>). Why should our frontend libraries by any different?</p>
+<p>Starting with <a href="http://blog.pinaxproject.com/2015/08/02/pinax-theme-bootstrap-6-0-0-released/">version 6.0.0</a>, the theme ships with templates and it’s own small javascript file. It is documented what versions the templates are tested with but nothing restricts you from using different versions at the project level.</p>
+<p>We have provided a reference implementation of using <a href="https://www.npmjs.com">npm</a> and <a href="http://webpack.github.io">webpack</a> in our most popular starter project, the <code>pinax-project-account</code> project. To build the <code>package.json</code> (<code>npm</code>‘s version of <code>requirements.txt</code>) we simply:</p>
+<pre><code>npm init  # taking all defaults
+npm install bootstrap font-awesome jquery --save  # the core libraries we need
+npm install webpack  --save # the builder
+npm install extract-text-webpack-plugin --save  # plugin to break apart files
+npm install css-loader style-loader file-loader less-loader babel-loader --save
+</code></pre>
+
+<p>Subsequent developers (or if you are using this starter project), can simply issue:</p>
+<pre><code>npm install
+</code></pre>
+
+<p>and it will install everything in the <code>package.json</code> to a local <code>node_modules/</code> directory that <code>webpack</code> can then use to build static files.</p>
+<p>Another thing we did in the starter project was to provide a working <code>webpack.config.js</code> which provides not only a build script but also the ability to run a watcher so static assets are built as you edit them.</p>
+<p>To signal the static files taking on it’s own parallel process to manage dependencies and requirements, we moved the <code>static</code> folder to the top level rather than inside the project package. In addition, we segment to subfolders, <code>src/</code> and <code>dist/</code> to help developers understand that you only edit the files in <code>src/</code>. Only the files winding up in <code>dist/</code> are served due to the changes in <code>settings.STATICFILES_DIRS</code>.</p>
+<p>The starter project comes with assets prebuilt and ready to go. If you make changes to any any assets you simply need to run:</p>
+<pre><code>npm install
+npm run build
+</code></pre>
+
+<p>If you want to have your assets automatically rebuild whenver you save changes, you can run:</p>
+<pre><code>npm run watch
+</code></pre>
+
+<p>If you need to add some other library, a datepicker for instance, you simply need to run the <code>npm install &lt;package&gt; --save</code> command, hook it up in your <code>static/src/js/main.js</code> (or elsewhere in your modules), and run <code>npm run build</code> if you were not already running <code>npm run watch</code>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../apps_list/" class="btn btn-neutral float-right" title="List of Apps"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../starter_project_list/" class="btn btn-neutral" title="List of Starter Projects"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../starter_project_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../apps_list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
