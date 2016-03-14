@@ -297,18 +297,18 @@
               
                 <h1 id="getting-started">Getting Started</h1>
 <p>The <code>pinax/pinax-starter-projects</code> repo is available <a href="https://github.com/pinax/pinax-starter-projects/">here</a>.</p>
-<p>Many of the starter projects are derivatives of each other <code>zero</code> is the parent of <code>account</code> among many
+<p>Many of the starter projects are derivatives of each other (<code>zero</code> is the parent of <code>account</code> among many
 others). We leverage <code>git</code> and branching to manage the hierarchy. Each project template lives in it's
 own branch and will branch from its natural parent.</p>
 <p>All starter projects share a common method for getting started. It involves creating a virtual environment, installing Django, and running the <code>startproject</code> command with a URL to the template, followed by a few commands within your new project. Or even easier, you can use the <code>pinax</code>
 command line utility.</p>
 <h2 id="getting-started_1">Getting Started</h2>
-<p>You might use <code>pyenv</code> instead.</p>
 <pre><code>pip install virtualenv
 virtualenv mysiteenv
 source mysiteenv/bin/activate
 </code></pre>
 
+<p>You might use <code>pyenv</code> to manage the version of Python used in your virtualenv. See the <a href="https://github.com/yyuu/pyenv">pyenv repository</a> for usage.</p>
 <h3 id="using-the-pinax-command-line-utility">Using the <code>pinax</code> command line utility</h3>
 <pre><code>pip install pinax-cli
 pinax projects  # list available project releases
